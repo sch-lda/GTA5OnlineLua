@@ -38,9 +38,6 @@ internal class Program
 
                 var size = GetFileSize(luaFileInfo.Length);
                 var download = $"{host}/{dirName}/{luaFileInfo.Name}";
-                    
-                IniHelper.WriteValue("LuaInfo", "Size", size, file);
-                IniHelper.ReadValue("LuaInfo", "Download", download);
 
                 onlineLua.Add(new()
                 {
