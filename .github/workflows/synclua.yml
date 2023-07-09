@@ -1,6 +1,7 @@
 name: Auto-sync-lua
 
 on:
+  workflow_dispatch:
   push:
     branches:
     - main
