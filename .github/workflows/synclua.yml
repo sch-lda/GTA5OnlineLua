@@ -1,8 +1,10 @@
 name: Auto-sync-lua
 
 on:
-  workflow_dispatch:
-
+  push:
+    branches:
+    - main
+    
 jobs:
   synclua:
     runs-on: ubuntu-latest
@@ -34,26 +36,40 @@ jobs:
           path: HeistLua
           submodules: recursive
           
+      - name: Checkout SchLua Sources
+        uses: actions/checkout@v3
+        with:
+          repository: sch-lda/SCH-LUA-YIMMENU
+          path: SchLua
+          submodules: recursive
+          
       - name: Run Prometheus
-        run: lua Prometheus/cli.lua --preset Medium HeistLua/scripts/Heist.lua
+        run: |
+          lua Prometheus/cli.lua --preset Medium HeistLua/scripts/Heist.lua
       
       - name: Remove Raw Lua
-        run: rm HeistLua/scripts/Heist.lua
+        run: |
+          rm HeistLua/scripts/Heist.lua
         
       - name: Rename Lua
         run: |
           cd HeistLua/scripts/
           mv Heist.obfuscated.lua Heist.lua
         
-      - name: Package to Zip
+      - name: HeistLua to Zip
         run: |
           cd HeistLua/scripts/
           zip -r ../HeistLua.zip .
+          
+      - name: SchLua to Zip
+        run: |
+          zip -j -r HeistLua/SchLua.zip SchLua/sch.lua
           
       - name: move zip
         run: |
           mkdir -p out/
           mv HeistLua/HeistLua.zip GTA5OnlineLua/YimMenu/
+          mv HeistLua/SchLua.zip GTA5OnlineLua/YimMenu/
         
       - name: Upload zip
         uses: actions/upload-artifact@v3
@@ -67,5 +83,5 @@ jobs:
           git config --global user.name "sch-lda"
           git config --global user.email "your-email@example.com"
           git add .
-          git commit -m "Update HeistLua.zip"
+          git commit -m "Sync lua from other repo"
           git push
