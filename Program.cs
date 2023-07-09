@@ -25,31 +25,31 @@ internal class Program
         {
             var fileInfo = new FileInfo(file);
 
-            if (fileInfo.Extension == ".ini")
+            if (fileInfo.Extension != ".ini")
+                continue;
+
+            var luaFile = fileInfo.FullName.Replace(".ini", "") + ".zip";
+            var luaFileInfo = new FileInfo(luaFile);
+
+            var name = IniHelper.ReadValue("LuaInfo", "Name", file);
+            var author = IniHelper.ReadValue("LuaInfo", "Author", file);
+            var description = IniHelper.ReadValue("LuaInfo", "Description", file);
+            var version = IniHelper.ReadValue("LuaInfo", "Version", file);
+            var update = IniHelper.ReadValue("LuaInfo", "Update", file);
+
+            var size = GetFileSize(luaFileInfo.Length);
+            var download = $"{host}/{dirName}/{luaFileInfo.Name}";
+
+            onlineLua.Add(new()
             {
-                var luaFile = fileInfo.FullName.Replace(".ini", "") + ".zip";
-                var luaFileInfo = new FileInfo(luaFile);
-
-                var name = IniHelper.ReadValue("LuaInfo", "Name", file);
-                var author = IniHelper.ReadValue("LuaInfo", "Author", file);
-                var description = IniHelper.ReadValue("LuaInfo", "Description", file);
-                var version = IniHelper.ReadValue("LuaInfo", "Version", file);
-                var update = IniHelper.ReadValue("LuaInfo", "Update", file);
-
-                var size = GetFileSize(luaFileInfo.Length);
-                var download = $"{host}/{dirName}/{luaFileInfo.Name}";
-
-                onlineLua.Add(new()
-                {
-                    Name = name,
-                    Author = author,
-                    Description = description,
-                    Version = version,
-                    Update = update,
-                    Size = size,
-                    Download = download
-                });
-            }
+                Name = name,
+                Author = author,
+                Description = description,
+                Version = version,
+                Update = update,
+                Size = size,
+                Download = download
+            });
         }
     }
 
