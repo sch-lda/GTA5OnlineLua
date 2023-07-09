@@ -1,6 +1,6 @@
 ## GTA5线上线上 Lua仓库
 
-为 `GTA5线上小助手` 提供在线下载Lua功能
+为 `GTA5线上小助手` 提供在线下载Lua服务
 
 ## int内容规范
 
@@ -19,7 +19,7 @@ Update=2023/07/09
 
 ## zip内容规范
 
-Lua统一为zip格式压缩，且不能有嵌套目录
+Lua统一使用zip格式压缩，且不能有嵌套目录
 
 ![image](https://github.com/CrazyZhang666/GTA5OnlineLua/assets/28080853/ebc93815-2c2b-423c-a736-8e8d0cab98aa)
 
