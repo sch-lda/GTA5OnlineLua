@@ -13,12 +13,17 @@ internal class Program
         var kiddionLua = new List<LuaInfo>();
         var yimMenuLua = new List<LuaInfo>();
 
+        Console.WriteLine("操作开始!");
+        Console.WriteLine();
+
         GetLuaInfo(kiddionLua, "Kiddion");
+        Console.WriteLine();
         GetLuaInfo(yimMenuLua, "YimMenu");
 
         JsonHelper.WriteFile("./Kiddion.json", kiddionLua);
         JsonHelper.WriteFile("./YimMenu.json", yimMenuLua);
 
+        Console.WriteLine();
         Console.WriteLine("操作结束!");
         Console.ReadLine();
     }
@@ -54,6 +59,8 @@ internal class Program
                 Size = size,
                 Download = download
             });
+
+            Console.WriteLine($"{dirName} 脚本: {luaFileInfo.Name} 获取信息成功");
         }
     }
 
