@@ -37,7 +37,7 @@ internal class Program
                 var update = IniHelper.ReadValue("LuaInfo", "Update", file);
 
                 var size = GetFileSize(luaFileInfo.Length);
-                var download = $"{host}/{dirName}/{luaFile}";
+                var download = $"{host}/{dirName}/{luaFileInfo.Name}";
                     
                 IniHelper.WriteValue("LuaInfo", "Size", size, file);
                 IniHelper.ReadValue("LuaInfo", "Download", download);
