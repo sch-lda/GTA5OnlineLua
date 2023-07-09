@@ -1,4 +1,8 @@
-﻿namespace GTA5OnlineLua;
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+
+namespace GTA5OnlineLua;
 
 internal class Program
 {
