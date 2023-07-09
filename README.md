@@ -10,11 +10,11 @@ Lua对应的int配置文件如下
 
 ```
 [LuaInfo]
-Name=Alice Lua
-Author=Alice
-Description=一款由Alice大佬开发的Kiddion使用的Lua脚本
-Version=1.0
-Update=2023/07/09
+Name = Alice Lua
+Author = Alice
+Description = 一款由Alice大佬开发的Kiddion使用的Lua脚本
+Version = 1.0
+Update = 2023/07/09
 ```
 
 ## zip内容规范
