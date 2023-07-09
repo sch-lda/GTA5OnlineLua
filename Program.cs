@@ -2,7 +2,7 @@
 
 internal class Program
 {
-    private const string host = "https://ghproxy.com/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/";
+    private const string host = "https://ghproxy.com/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main";
 
     static void Main(string[] args)
     {
