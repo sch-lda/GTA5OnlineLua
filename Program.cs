@@ -61,7 +61,7 @@ internal class Program
         var kb = size / 1024.0f;
 
         if (kb > 1024)
-            return $"{kb / 1024:0.00} MB";
+            return $"{kb / 1024.0f:0.00} MB";
         else
             return $"{kb:0.00} KB";
     }
