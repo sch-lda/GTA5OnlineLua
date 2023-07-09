@@ -80,8 +80,53 @@ jobs:
       - name: git push
         run: |
           cd GTA5OnlineLua
-          git config --global user.name "sch-lda"
+          git config --global user.name "sch-bot"
           git config --global user.email "your-email@example.com"
           git add .
           git commit -m "Sync lua from other repo"
           git push
+          
+  buildjson:
+    needs: synclua
+    runs-on: windows-latest
+    steps:
+       - name: Checkout GTA5OnlineLua Sources
+         uses: actions/checkout@v3
+         with:
+              repository: CrazyZhang666/GTA5OnlineLua
+              path: GTA5OnlineLua
+              submodules: recursive
+       - name: Setup MSBuild
+         uses: microsoft/setup-msbuild@v1.1
+
+       - name: Setup .Net6.0
+         uses: actions/setup-dotnet@v3
+         with:
+          dotnet-version: '6.0'
+          
+       - name: Setup Nuget
+         uses: nuget/setup-nuget@v1
+
+       - name: Restore Packages
+         run: nuget restore GTA5OnlineLua/GTA5OnlineLua.sln
+        
+       - name: Build GTA5OnlineLua
+         run: msbuild.exe GTA5OnlineLua/GTA5OnlineLua.sln  /p:configuration="Release"
+       - name: Run GTA5OnlineLua
+         run: |
+             cd GTA5OnlineLua/bin/Release/net6.0/
+             ./GTA5OnlineLua.exe
+          
+       - name: Copy Json
+         run: |
+           copy ./GTA5OnlineLua/bin/Release/net6.0/Kiddion.json  GTA5OnlineLua/json/Kiddion.json  
+           copy ./GTA5OnlineLua/bin/Release/net6.0/YimMenu.json  GTA5OnlineLua/json/YimMenu.json  
+           
+       - name: git push
+         run: |
+          cd GTA5OnlineLua
+          git config --global user.name "sch-bot"
+          git config --global user.email "your-email@example.com"
+          git add .
+          git commit -m "update json"
+          git push --force 
