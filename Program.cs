@@ -1,9 +1,9 @@
-﻿using System;
-
-namespace GTA5OnlineLua;
+﻿namespace GTA5OnlineLua;
 
 internal class Program
 {
+    private const string host = "https://ghproxy.com/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/";
+
     static void Main(string[] args)
     {
         var kiddionLua = new List<LuaInfo>();
@@ -37,10 +37,10 @@ internal class Program
                 var update = IniHelper.ReadValue("LuaInfo", "Update", file);
 
                 var size = GetFileSize(luaFileInfo.Length);
-
-                var download = IniHelper.ReadValue("LuaInfo", "Download", file);
-
+                var download = $"{host}/{dirName}/{luaFile}";
+                    
                 IniHelper.WriteValue("LuaInfo", "Size", size, file);
+                IniHelper.ReadValue("LuaInfo", "Download", download);
 
                 onlineLua.Add(new()
                 {
