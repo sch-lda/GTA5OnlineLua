@@ -1,0 +1,71 @@
+name: Auto-sync-lua
+
+on:
+  workflow_dispatch:
+
+jobs:
+  synclua:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set up Lua
+        uses: ljmf00/setup-lua@v1.0.0
+        with:
+           lua-version: '5.1'
+           
+      - name: Checkout GTA5OnlineLua Sources
+        uses: actions/checkout@v3
+        with:
+          repository: CrazyZhang666/GTA5OnlineLua
+          path: GTA5OnlineLua
+          submodules: recursive
+          
+      - name: Checkout Prometheus Sources
+        uses: actions/checkout@v3
+        with:
+          repository: prometheus-lua/Prometheus
+          path: Prometheus
+          submodules: recursive
+          
+      - name: Checkout HeistLua Sources
+        uses: actions/checkout@v3
+        with:
+          repository: wangzixuank/YimMenu-HeistLua
+          path: HeistLua
+          submodules: recursive
+          
+      - name: Run Prometheus
+        run: lua Prometheus/cli.lua --preset Medium HeistLua/scripts/Heist.lua
+      
+      - name: Remove Raw Lua
+        run: rm HeistLua/scripts/Heist.lua
+        
+      - name: Rename Lua
+        run: |
+          cd HeistLua/scripts/
+          mv Heist.obfuscated.lua Heist.lua
+        
+      - name: Package to Zip
+        run: |
+          cd HeistLua/scripts/
+          zip -r ../HeistLua.zip .
+          
+      - name: move zip
+        run: |
+          mkdir -p out/
+          mv HeistLua/HeistLua.zip GTA5OnlineLua/YimMenu/
+        
+      - name: Upload zip
+        uses: actions/upload-artifact@v3
+        with:
+          name: HeistLua
+          path: GTA5OnlineLua/YimMenu/
+          
+      - name: git push
+        run: |
+          cd GTA5OnlineLua
+          git config --global user.name "sch-lda"
+          git config --global user.email "your-email@example.com"
+          git add .
+          git commit -m "Update HeistLua.zip"
+          git push
