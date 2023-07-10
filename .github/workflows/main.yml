@@ -1,0 +1,175 @@
+name: Auto-sync-lua
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+    - main
+    
+jobs:
+  synclua:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set up Lua
+        uses: ljmf00/setup-lua@v1.0.0
+        with:
+           lua-version: '5.1'
+     
+           
+      - name: Checkout GTA5OnlineLua Sources
+        uses: actions/checkout@v3
+        with:
+          
+          path: GTA5OnlineLua
+          submodules: recursive
+          
+      - name: Checkout Prometheus Sources
+        uses: actions/checkout@v3
+        with:
+          repository: prometheus-lua/Prometheus
+          path: Prometheus
+          submodules: recursive
+          
+      - name: Checkout HeistLua Sources
+        uses: actions/checkout@v3
+        with:
+          repository: wangzixuank/YimMenu-HeistLua
+          path: HeistLua
+          submodules: recursive
+          
+      - name: Checkout SchLua Sources
+        uses: actions/checkout@v3
+        with:
+          repository: sch-lda/SCH-LUA-YIMMENU
+          path: SchLua
+          submodules: recursive
+          
+      - name: Read HeistLua Real Version
+        id: read_file
+        run: |
+         file_path="HeistLua/scripts/Heist.lua"
+         version=$(head -n 1 "$file_path" | grep -oP '(?<=v)\d+\.\d+')
+         echo "::set-output name=version::$version"
+         
+      - name: Read HeistLua ini Version
+        id: read_ini
+        run: |
+          version2=$(awk -F "=" '/Version/ {print $2}' GTA5OnlineLua/YimMenu/HeistLua.ini | sed 's/^[ \t]*//')
+          echo "::set-output name=version2::$version2"
+          
+      - name: Update HeistLua ini Version
+        run: |
+         if [[ "${{ steps.read_file.outputs.version }}" > "${{ steps.read_ini.outputs.version2 }}" ]]; then
+            sed -i "s/Version = ${{ steps.read_ini.outputs.version2 }}/Version = ${{ steps.read_file.outputs.version }}/" GTA5OnlineLua/YimMenu/HeistLua.ini
+          else
+            echo "无需更新版本号"
+          fi
+          
+      - name: Update date 1
+        run: |
+          if [[ "${{ steps.read_file.outputs.version }}" > "${{ steps.read_ini.outputs.version2 }}" ]]; then
+            sed -i '/Update/d' GTA5OnlineLua/YimMenu/HeistLua.ini
+            echo "Update = $(date +'%Y/%m/%d')" >> GTA5OnlineLua/YimMenu/HeistLua.ini
+          else
+            echo "无需更新日期"
+          fi
+        
+      - name: Run Prometheus
+        run: |
+          lua Prometheus/cli.lua --preset Medium HeistLua/scripts/Heist.lua
+      
+      - name: Remove Raw Lua
+        run: |
+          rm HeistLua/scripts/Heist.lua
+        
+      - name: Rename Lua
+        run: |
+          cd HeistLua/scripts/
+          mv Heist.obfuscated.lua Heist.lua
+        
+      - name: HeistLua to Zip
+        run: |
+          cd HeistLua/scripts/
+          zip -r ../HeistLua.zip .
+          
+      - name: SchLua to Zip
+        run: |
+          zip -j -r HeistLua/SchLua.zip SchLua/sch.lua
+          
+      - name: move zip
+        run: |
+          mkdir -p out/
+          mv HeistLua/HeistLua.zip GTA5OnlineLua/YimMenu/
+          mv HeistLua/SchLua.zip GTA5OnlineLua/YimMenu/
+        
+      - name: Upload zip
+        uses: actions/upload-artifact@v3
+        with:
+          name: YimLua
+          path: GTA5OnlineLua/YimMenu/
+          
+      - name: git push
+        run: |
+          cd GTA5OnlineLua
+          git config --global user.name "sch-bot"
+          git config --global user.email "your-email@example.com"
+          git add .
+          git commit -m "Sync lua from other repo"
+          git push
+          
+  buildjson:
+    needs: synclua
+    runs-on: windows-latest
+    steps:
+       - name: Checkout GTA5OnlineLua Sources
+         uses: actions/checkout@v3
+         with:
+              path: GTA5OnlineLua
+              submodules: recursive
+       - name: Setup MSBuild
+         uses: microsoft/setup-msbuild@v1.1
+
+       - name: Setup .Net6.0
+         uses: actions/setup-dotnet@v3
+         with:
+          dotnet-version: '6.0'
+          
+       - name: Setup Nuget
+         uses: nuget/setup-nuget@v1
+
+       - name: git pull1
+         run: |
+          cd GTA5OnlineLua
+          git pull
+          
+       - name: Restore Packages
+         run: nuget restore GTA5OnlineLua/GTA5OnlineLua.sln
+        
+       - name: Build GTA5OnlineLua
+         run: msbuild.exe GTA5OnlineLua/GTA5OnlineLua.sln  /p:configuration="Release"
+         
+       - name: Run GTA5OnlineLua
+         run: |
+             cd GTA5OnlineLua/bin/Release/net6.0/
+             ./GTA5OnlineLua.exe
+           
+       - name: Copy Json
+         run: |
+           copy ./GTA5OnlineLua/bin/Release/net6.0/Kiddion.json  GTA5OnlineLua/json/Kiddion.json  
+           copy ./GTA5OnlineLua/bin/Release/net6.0/YimMenu.json  GTA5OnlineLua/json/YimMenu.json  
+           
+       - name: Upload json
+         uses: actions/upload-artifact@v3
+         with:
+           name: json
+           path: GTA5OnlineLua/json/
+           
+       - name: git push
+         run: |
+          cd GTA5OnlineLua
+          git config --global user.name "sch-bot"
+          git config --global user.email "your-email@example.com"
+          git add .
+          git commit -m "update json"
+          git push
