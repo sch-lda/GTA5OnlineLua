@@ -25,6 +25,12 @@
         <None Update="Kiddion\AliceLua3.zip">
             <CopyToOutputDirectory>Always</CopyToOutputDirectory>
         </None>
+        <None Update="YimMenu\AliceLua.ini">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+        <None Update="YimMenu\AliceLua.zip">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
         <None Update="YimMenu\HeistLua.ini">
             <CopyToOutputDirectory>Always</CopyToOutputDirectory>
         </None>
@@ -42,6 +48,12 @@
         </None>
         <None Update="YimMenu\HeistLua3.zip">
             <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+        <None Update="YimMenu\SchLua.ini">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+        <None Update="YimMenu\SchLua.zip">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
         </None>
     </ItemGroup>
 
