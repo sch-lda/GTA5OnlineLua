@@ -203,3 +203,13 @@ jobs:
           git add .
           git commit -m "update json"
           git push
+       - name: Create Release
+         uses: softprops/action-gh-release@v1
+         with:
+          name: update
+          tag_name: update
+          body: |
+            **This release has been built by Github Actions**
+
+          files: |
+            GTA5OnlineLua/bin/Release/net6.0/GTA5OnlineLua.exe
