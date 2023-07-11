@@ -186,14 +186,14 @@ jobs:
            
        - name: Copy Json
          run: |
-           copy ./GTA5OnlineLua/bin/Release/net6.0/Kiddion.json  GTA5OnlineLua/json/Kiddion.json  
-           copy ./GTA5OnlineLua/bin/Release/net6.0/YimMenu.json  GTA5OnlineLua/json/YimMenu.json  
+           copy ./GTA5OnlineLua/bin/Release/net6.0/Kiddion.json  GTA5OnlineLua/Release/Kiddion.json  
+           copy ./GTA5OnlineLua/bin/Release/net6.0/YimMenu.json  GTA5OnlineLua/Release/YimMenu.json  
            
        - name: Upload json
          uses: actions/upload-artifact@v3
          with:
            name: json
-           path: GTA5OnlineLua/json/
+           path: GTA5OnlineLua/Release/
            
        - name: git push
          run: |
