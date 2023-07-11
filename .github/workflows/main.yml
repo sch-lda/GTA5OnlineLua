@@ -66,7 +66,7 @@ jobs:
             echo "无需更新版本号"
           fi
           
-      - name: Update date 1
+      - name: Update date HeistLua
         run: |
           if [[ "${{ steps.read_file.outputs.version }}" > "${{ steps.read_ini.outputs.version2 }}" ]]; then
             sed -i '/Update/d' GTA5OnlineLua/YimMenu/HeistLua.ini
@@ -75,6 +75,36 @@ jobs:
             echo "无需更新日期"
           fi
         
+      - name: Read Schlua Real Version
+        id: read_sch
+        run: |
+         file_path="SchLua/sch.lua"
+         version3=$(head -n 1 "$file_path" | grep -oP '(?<=v)\d+\.\d+')
+         echo "::set-output name=version3::$version3"
+         
+      - name: Read Schlua ini Version
+        id: read_schini
+        run: |
+          version4=$(awk -F "=" '/Version/ {print $2}' GTA5OnlineLua/YimMenu/SchLua.ini | sed 's/^[ \t]*//')
+          echo "::set-output name=version4::$version4"
+          
+      - name: Update Schlua ini Version
+        run: |
+         if [[ "${{ steps.read_sch.outputs.version3 }}" > "${{ steps.read_schini.outputs.version4 }}" ]]; then
+            sed -i "s/Version = ${{ steps.read_schini.outputs.version4 }}/Version = ${{ steps.read_sch.outputs.version3 }}/" GTA5OnlineLua/YimMenu/SchLua.ini
+          else
+            echo "无需更新版本号SchLua.ini"
+          fi
+          
+      - name: Update date SchLua
+        run: |
+          if [[ "${{ steps.read_sch.outputs.version3 }}" > "${{ steps.read_schini.outputs.version4 }}" ]]; then
+            sed -i '/Update/d' GTA5OnlineLua/YimMenu/SchLua.ini
+            echo "Update = $(date +'%Y/%m/%d')" >> GTA5OnlineLua/YimMenu/SchLua.ini
+          else
+            echo "无需更新日期SchLua.ini"
+          fi
+          
       - name: Run Prometheus
         run: |
           lua Prometheus/cli.lua --preset Medium HeistLua/scripts/Heist.lua
