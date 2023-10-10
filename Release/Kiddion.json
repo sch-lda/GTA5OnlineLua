@@ -1,0 +1,50 @@
+[
+  {
+    "Name": "Alice Lua",
+    "Author": "Alice",
+    "Description": "由Alice大佬开发的Kiddion专用Lua脚本，相当于Kiddion增强版DLC，推荐使用",
+    "Version": "2.03",
+    "Update": "2023/10/10",
+    "Size": "5.76 MB",
+    "Download": [
+      "https://blog.host3650.live/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/Kiddion/AliceLua.zip",
+      "https://ghproxy.net/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/Kiddion/AliceLua.zip",
+      "https://gcore.jsdelivr.net/gh/CrazyZhang666/GTA5OnlineLua@main/Kiddion/AliceLua.zip",
+      "https://jsdelivr.b-cdn.net/gh/CrazyZhang666/GTA5OnlineLua@main/Kiddion/AliceLua.zip",
+      "https://github.moeyy.xyz/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/Kiddion/AliceLua.zip",
+      "https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/Kiddion/AliceLua.zip"
+    ]
+  },
+  {
+    "Name": "Easy Lua",
+    "Author": "CrazyZhang",
+    "Description": "对Kiddion现有功能进行补充，包含一些简单实用功能",
+    "Version": "1.67",
+    "Update": "2023/07/19",
+    "Size": "3.52 KB",
+    "Download": [
+      "https://blog.host3650.live/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/Kiddion/EasyLua.zip",
+      "https://ghproxy.net/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/Kiddion/EasyLua.zip",
+      "https://gcore.jsdelivr.net/gh/CrazyZhang666/GTA5OnlineLua@main/Kiddion/EasyLua.zip",
+      "https://jsdelivr.b-cdn.net/gh/CrazyZhang666/GTA5OnlineLua@main/Kiddion/EasyLua.zip",
+      "https://github.moeyy.xyz/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/Kiddion/EasyLua.zip",
+      "https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/Kiddion/EasyLua.zip"
+    ]
+  },
+  {
+    "Name": "Ideal Lua",
+    "Author": "Prodigium",
+    "Description": "Ideal 是个娱乐功能脚本，致力于做个战局的好帮手！",
+    "Version": "2.00",
+    "Update": "2023/10/10",
+    "Size": "7.91 MB",
+    "Download": [
+      "https://blog.host3650.live/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/Kiddion/idealLua.zip",
+      "https://ghproxy.net/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/Kiddion/idealLua.zip",
+      "https://gcore.jsdelivr.net/gh/CrazyZhang666/GTA5OnlineLua@main/Kiddion/idealLua.zip",
+      "https://jsdelivr.b-cdn.net/gh/CrazyZhang666/GTA5OnlineLua@main/Kiddion/idealLua.zip",
+      "https://github.moeyy.xyz/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/Kiddion/idealLua.zip",
+      "https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/Kiddion/idealLua.zip"
+    ]
+  }
+]

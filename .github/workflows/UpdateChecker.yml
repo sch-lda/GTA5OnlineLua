@@ -1,0 +1,172 @@
+name: UpdateChecker
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/30 * * * *"
+    
+jobs:
+  luachecker:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout GTA5OnlineLua Sources
+        uses: actions/checkout@v3
+        with:
+          path: GTA5OnlineLua
+          fetch-depth: 0
+  
+      - name: Checkout HeistLua Sources
+        uses: actions/checkout@v3
+        with:
+          repository: wangzixuank/YimMenu-HeistLua
+          path: HeistLua
+          fetch-depth: 0
+          
+      - name: Checkout SchLua Sources
+        uses: actions/checkout@v3
+        with:
+          repository: sch-lda/SCH-LUA-YIMMENU
+          path: SchLua
+          fetch-depth: 0
+          
+      - name: Checkout WeaponAttribute Sources
+        uses: actions/checkout@v3
+        with:
+          repository: TCRoid/YimMenu-Lua-WeaponAttribute
+          path: WeaponAttribute
+          fetch-depth: 0
+          
+      - name: git pull2
+        run: |
+          cd WeaponAttribute
+          git pull
+                    
+      - name: Checkout RScript Sources
+        uses: actions/checkout@v3
+        with:
+          repository: TCRoid/YimMenu-Lua-RScript
+          path: RScript
+          fetch-depth: 0
+          
+      - name: git pull1
+        run: |
+          cd RScript
+          git pull
+          
+      - name: git pull3
+        run: |
+          cd GTA5OnlineLua
+          git pull
+          
+      - name: git pull4
+        run: |
+          cd HeistLua
+          git pull
+          
+      - name: git pull5
+        run: |
+          cd SchLua
+          git pull
+          
+      - name: Alicelua kiddion zip Update Checker
+        run: |
+           cd GTA5OnlineLua/Kiddion
+           aria2c -o  AliceLuaupd.zip https://down.bbfas.com/Alice/LuaScript
+           old_hash=$(sha256sum AliceLua.zip | awk '{print $1}')
+           new_hash=$(sha256sum AliceLuaupd.zip | awk '{print $1}')
+           rm AliceLuaupd.zip
+           if [ "$old_hash" == "$new_hash" ]; then
+            echo "Alice for Kiddion无更新"
+           else
+            echo "Alice for Kiddion已更新" 
+           fi
+           
+      - name: Create tmpdir
+        run: mkdir tmpdir
+        
+      - name: Upzip TCRoid's Scripts
+        run: |
+             unzip GTA5OnlineLua/YimMenu/WeaponAttribute.zip -d tmpdir/
+             unzip GTA5OnlineLua/YimMenu/RScript.zip -d tmpdir/
+             
+      - name: WeaponAttribute Lua Update Checker
+        run: |
+           old_hash1=$(sha256sum tmpdir/WeaponAttribute.lua | awk '{print $1}')
+           new_hash1=$(sha256sum WeaponAttribute/WeaponAttribute.lua | awk '{print $1}')
+           if [ "$old_hash1" == "$new_hash1" ]; then
+            echo "WeaponAttribute无更新"
+           else
+            echo "WeaponAttribute无更新" > trigger.txt
+           fi
+                        
+      - name: RScript Lua Update Checker
+        run: |
+           old_hash2=$(sha256sum tmpdir/RScript.lua | awk '{print $1}')
+           new_hash2=$(sha256sum RScript/RScript.lua | awk '{print $1}')
+           if [ "$old_hash2" == "$new_hash2" ]; then
+            echo "RScript.lua无更新"
+           else
+            echo "RScript发现更新" > trigger.txt
+           fi
+           
+      - name: Read HeistLua Real Version
+        id: read_file
+        run: |
+         file_path="HeistLua/scripts/Heist.lua"
+         version=$(head -n 1 "$file_path" | grep -oP '(?<=v)\d+\.\d+')
+         echo "::set-output name=version::$version"
+         
+      - name: Read HeistLua ini Version
+        id: read_ini
+        run: |
+          version2=$(awk -F "=" '/Version/ {print $2}' GTA5OnlineLua/YimMenu/HeistLua.ini | sed 's/^[ \t]*//')
+          echo "::set-output name=version2::$version2"
+          
+      - name: HeistLua Update Checker
+        run: |
+         if [[ "${{ steps.read_file.outputs.version }}" > "${{ steps.read_ini.outputs.version2 }}" ]]; then
+            cd GTA5OnlineLua/
+            echo "HeistLua已更新" > trigger.txt
+          else
+            echo "HeistLua无更新"
+          fi
+          
+        
+      - name: Read Schlua Real Version
+        id: read_sch
+        run: |
+         file_path="SchLua/sch.lua"
+         version3=$(head -n 1 "$file_path" | grep -oP '(?<=v)\d+\.\d+')
+         echo "::set-output name=version3::$version3"
+         
+      - name: Read Schlua ini Version
+        id: read_schini
+        run: |
+          version4=$(awk -F "=" '/Version/ {print $2}' GTA5OnlineLua/YimMenu/SchLua.ini | sed 's/^[ \t]*//')
+          echo "::set-output name=version4::$version4"
+          
+      - name: Schlua Update Checker
+        run: |
+         if [[ "${{ steps.read_sch.outputs.version3 }}" > "${{ steps.read_schini.outputs.version4 }}" ]]; then
+            cd GTA5OnlineLua/
+            echo "SchtLua已更新" > trigger.txt
+          else
+            echo "SchLua无更新"
+          fi
+          
+      - name: Check trigger file
+        run: |
+          cd GTA5OnlineLua/
+          if [ -f "trigger.txt" ]; then
+          echo "即将触发更新"
+          else
+            poweroff
+          fi
+          
+      - name: Trigger update workflow
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          repository: ${{ github.repository }}
+          event-type: main

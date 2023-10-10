@@ -1,0 +1,334 @@
+name: Auto-sync-lua
+
+on:
+  workflow_dispatch:
+  repository_dispatch: # 允许通过 API 触发
+  push:
+    branches:
+    - main
+    
+jobs:
+  synclua:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set up Lua
+        uses: ljmf00/setup-lua@v1.0.0
+        with:
+           lua-version: '5.1'
+     
+           
+      - name: Checkout GTA5OnlineLua Sources
+        uses: actions/checkout@v3
+        with:
+          
+          path: GTA5OnlineLua
+          submodules: recursive
+          
+      - name: Checkout Prometheus Sources
+        uses: actions/checkout@v3
+        with:
+          repository: prometheus-lua/Prometheus
+          path: Prometheus
+          submodules: recursive
+          
+      - name: Checkout HeistLua Sources
+        uses: actions/checkout@v3
+        with:
+          repository: wangzixuank/YimMenu-HeistLua
+          path: HeistLua
+          submodules: recursive
+          
+      - name: Checkout SchLua Sources
+        uses: actions/checkout@v3
+        with:
+          repository: sch-lda/SCH-LUA-YIMMENU
+          path: SchLua
+          submodules: recursive
+                    
+      - name: Checkout WeaponAttribute Sources
+        uses: actions/checkout@v3
+        with:
+          repository: TCRoid/YimMenu-Lua-WeaponAttribute
+          path: WeaponAttribute
+          fetch-depth: 0
+          
+      - name: git pull2a
+        run: |
+          cd WeaponAttribute
+          git pull
+                    
+      - name: Checkout RScript Sources
+        uses: actions/checkout@v3
+        with:
+          repository: TCRoid/YimMenu-Lua-RScript
+          path: RScript
+          fetch-depth: 0
+          
+      - name: git pull1a
+        run: |
+          cd RScript
+          git pull
+          
+      - name: git pull3
+        run: |
+          cd GTA5OnlineLua
+          git pull
+          
+      - name: git pull4
+        run: |
+          cd HeistLua
+          git pull
+          
+      - name: git pull5
+        run: |
+          cd SchLua
+          git pull
+          
+      - name: Create tmpdir
+        run: mkdir tmpdir
+        
+      - name: Upzip Alicelua for Yimmenu
+        run: |
+             unzip GTA5OnlineLua/YimMenu/AliceLua.zip -d tmpdir/
+             
+      - name: mv Yim lib
+        run: |
+          rm HeistLua/scripts/Alice-lib/lib.lua
+          cp tmpdir/Alice-Script/lib.lua HeistLua/scripts/Alice-lib/lib.lua
+          
+        
+      - name: Upzip TCRoid's Scripts
+        run: |
+             unzip GTA5OnlineLua/YimMenu/WeaponAttribute.zip -d tmpdir/
+             unzip GTA5OnlineLua/YimMenu/RScript.zip -d tmpdir/
+             
+      - name: WeaponAttribute Lua Update Checker
+        run: |
+           old_hash1=$(sha256sum tmpdir/WeaponAttribute.lua | awk '{print $1}')
+           new_hash1=$(sha256sum WeaponAttribute/WeaponAttribute.lua | awk '{print $1}')
+           if [ "$old_hash1" == "$new_hash1" ]; then
+            echo "WeaponAttribute无更新"
+           else
+            zip -j -r tmpdir/WeaponAttribute.zip WeaponAttribute/WeaponAttribute.lua
+            mv tmpdir/WeaponAttribute.zip GTA5OnlineLua/YimMenu/
+            sed -i '/Update/d' GTA5OnlineLua/YimMenu/WeaponAttribute.ini
+            echo "Update = $(date +'%Y/%m/%d')" >> GTA5OnlineLua/YimMenu/WeaponAttribute.ini
+           fi
+                        
+      - name: RScript Lua Update Checker
+        run: |
+           old_hash2=$(sha256sum tmpdir/RScript.lua | awk '{print $1}')
+           new_hash2=$(sha256sum RScript/RScript.lua | awk '{print $1}')
+           if [ "$old_hash2" == "$new_hash2" ]; then
+            echo "RScript.lua无更新"
+           else
+            zip -j -r tmpdir/RScript.zip RScript/RScript.lua
+            mv tmpdir/RScript.zip GTA5OnlineLua/YimMenu/
+            sed -i '/Update/d' GTA5OnlineLua/YimMenu/RScript.ini
+            echo "Update = $(date +'%Y/%m/%d')" >> GTA5OnlineLua/YimMenu/RScript.ini
+           fi
+           
+      - name: Read HeistLua Real Version
+        id: read_file
+        run: |
+         file_path="HeistLua/scripts/Heist.lua"
+         version=$(head -n 1 "$file_path" | grep -oP '(?<=v)\d+\.\d+')
+         echo "::set-output name=version::$version"
+
+      
+      - name: Read HeistLua ini Version
+        id: read_ini
+        run: |
+          version2=$(awk -F "=" '/Version/ {print $2}' GTA5OnlineLua/YimMenu/HeistLua.ini | sed 's/^[ \t]*//')
+          echo "::set-output name=version2::$version2"
+          
+      - name: Update HeistLua ini Version
+        run: |
+         if [[ "${{ steps.read_file.outputs.version }}" > "${{ steps.read_ini.outputs.version2 }}" ]]; then
+            sed -i "s/Version = ${{ steps.read_ini.outputs.version2 }}/Version = ${{ steps.read_file.outputs.version }}/" GTA5OnlineLua/YimMenu/HeistLua.ini
+          else
+            echo "无需更新版本号"
+          fi
+          
+      - name: Update date HeistLua
+        run: |
+          if [[ "${{ steps.read_file.outputs.version }}" > "${{ steps.read_ini.outputs.version2 }}" ]]; then
+            sed -i '/Update/d' GTA5OnlineLua/YimMenu/HeistLua.ini
+            echo "Update = $(date +'%Y/%m/%d')" >> GTA5OnlineLua/YimMenu/HeistLua.ini
+          else
+            echo "无需更新日期"
+          fi
+        
+      - name: Read Schlua Real Version
+        id: read_sch
+        run: |
+         file_path="SchLua/sch.lua"
+         version3=$(head -n 1 "$file_path" | grep -oP '(?<=v)\d+\.\d+')
+         echo "::set-output name=version3::$version3"
+         
+      - name: Read Schlua ini Version
+        id: read_schini
+        run: |
+          version4=$(awk -F "=" '/Version/ {print $2}' GTA5OnlineLua/YimMenu/SchLua.ini | sed 's/^[ \t]*//')
+          echo "::set-output name=version4::$version4"
+          
+      - name: Update Schlua ini Version
+        run: |
+         if [[ "${{ steps.read_sch.outputs.version3 }}" > "${{ steps.read_schini.outputs.version4 }}" ]]; then
+            sed -i "s/Version = ${{ steps.read_schini.outputs.version4 }}/Version = ${{ steps.read_sch.outputs.version3 }}/" GTA5OnlineLua/YimMenu/SchLua.ini
+          else
+            echo "无需更新版本号SchLua.ini"
+          fi
+          
+      - name: Update date SchLua
+        run: |
+          if [[ "${{ steps.read_sch.outputs.version3 }}" > "${{ steps.read_schini.outputs.version4 }}" ]]; then
+            sed -i '/Update/d' GTA5OnlineLua/YimMenu/SchLua.ini
+            echo "Update = $(date +'%Y/%m/%d')" >> GTA5OnlineLua/YimMenu/SchLua.ini
+          else
+            echo "无需更新日期SchLua.ini"
+          fi
+          
+      - name: Run Prometheus
+        run: |
+          lua Prometheus/cli.lua --preset Medium HeistLua/scripts/Heist.lua
+      
+      - name: Remove Raw Lua
+        run: |
+          rm HeistLua/scripts/Heist.lua
+        
+      - name: Rename Lua
+        run: |
+          cd HeistLua/scripts/
+          mv Heist.obfuscated.lua Heist.lua
+        
+      - name: HeistLua to Zip
+        run: |
+          cd HeistLua/scripts/
+          zip -r ../HeistLua.zip .
+          
+      - name: SchLua to Zip
+        run: |
+          zip -j -r HeistLua/SchLua.zip SchLua/sch.lua
+          
+      - name: move zip
+        run: |
+          mkdir -p out/
+          mv HeistLua/HeistLua.zip GTA5OnlineLua/YimMenu/
+          mv HeistLua/SchLua.zip GTA5OnlineLua/YimMenu/
+
+      - name: git push
+        run: |
+          cd GTA5OnlineLua
+          git config --global user.name "sch-bot"
+          git config --global user.email "your-email@example.com"
+          git add .
+          git commit -m "Sync lua from other repo"
+          git push
+          
+  buildjson:
+    needs: synclua
+    runs-on: windows-latest
+    steps:
+       - name: Checkout GTA5OnlineLua Sources
+         uses: actions/checkout@v3
+         with:
+              path: GTA5OnlineLua
+              submodules: recursive
+       - name: Setup MSBuild
+         uses: microsoft/setup-msbuild@v1.1
+
+       - name: Setup .Net6.0
+         uses: actions/setup-dotnet@v3
+         with:
+          dotnet-version: '6.0'
+          
+       - name: Setup Nuget
+         uses: nuget/setup-nuget@v1
+
+       - name: git pull1
+         run: |
+          cd GTA5OnlineLua
+          git pull
+          
+       - name: Restore Packages
+         run: nuget restore GTA5OnlineLua/GTA5OnlineLua.sln
+        
+       - name: Build GTA5OnlineLua
+         run: msbuild.exe GTA5OnlineLua/GTA5OnlineLua.sln  /p:configuration="Release"
+         
+       - name: Run GTA5OnlineLua
+         run: |
+             cd GTA5OnlineLua/bin/Release/net6.0/
+             ./GTA5OnlineLua.exe
+           
+       - name: Copy Json
+         run: |
+           copy ./GTA5OnlineLua/bin/Release/net6.0/Kiddion.json  GTA5OnlineLua/Release/Kiddion.json  
+           copy ./GTA5OnlineLua/bin/Release/net6.0/YimMenu.json  GTA5OnlineLua/Release/YimMenu.json  
+           
+       - name: Upload json
+         uses: actions/upload-artifact@v3
+         with:
+           name: json
+           path: GTA5OnlineLua/Release/
+           
+       - name: git push
+         run: |
+          cd GTA5OnlineLua
+          git config --global user.name "sch-bot"
+          git config --global user.email "your-email@example.com"
+          git add .
+          git commit -m "update json"
+          git push
+  create_release:
+    runs-on: ubuntu-latest
+    name: Create Release
+    needs: buildjson
+    steps:
+       - name: Checkout GTA5OnlineLua Sources
+         uses: actions/checkout@v3
+         with:
+              path: GTA5OnlineLua
+              submodules: recursive
+              
+       - name: git pull6
+         run: |
+          cd GTA5OnlineLua
+          git pull
+          
+       - name: Echo json sha256
+         id: build_sha
+         run: |
+          sha256sum GTA5OnlineLua/Release/Kiddion.json > sha256.checksum
+          echo "build_sha=$(cat sha256.checksum)" >> $GITHUB_OUTPUT
+          cat sha256.checksum
+          
+       - name: Echo yim sha256
+         id: build_sha1
+         run: |
+          sha256sum GTA5OnlineLua/Release/YimMenu.json > sha256.checksum1
+          echo "build_sha1=$(cat sha256.checksum1)" >> $GITHUB_OUTPUT
+          cat sha256.checksum1
+          
+       - name: Create Release
+         uses: softprops/action-gh-release@v1
+         with:
+          name: update
+          tag_name: update
+          body: |
+            **This release has been built by Github Actions**
+            Kid Hash:
+            ```
+            ${{ steps.build_sha.outputs.build_sha }}
+            ```
+            Yim Hash:
+            ```
+            ${{ steps.build_sha1.outputs.build_sha1 }}
+            ```
+          files: |
+            GTA5OnlineLua/Release/Kiddion.json
+            GTA5OnlineLua/Release/YimMenu.json
+            
+            
