@@ -2,10 +2,6 @@ name: Auto-sync-lua
 
 on:
   workflow_dispatch:
-  repository_dispatch: # 允许通过 API 触发
-  push:
-    branches:
-    - main
     
 jobs:
   synclua:
@@ -92,12 +88,7 @@ jobs:
         run: |
              unzip GTA5OnlineLua/YimMenu/AliceLua.zip -d tmpdir/
              
-      - name: mv Yim lib
-        run: |
-          rm HeistLua/scripts/Alice-lib/lib.lua
-          cp tmpdir/Alice-Script/lib.lua HeistLua/scripts/Alice-lib/lib.lua
-          
-        
+
       - name: Upzip TCRoid's Scripts
         run: |
              unzip GTA5OnlineLua/YimMenu/WeaponAttribute.zip -d tmpdir/
