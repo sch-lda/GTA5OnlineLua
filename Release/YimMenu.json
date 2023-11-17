@@ -1,4 +1,15 @@
 [
+    {
+    "Name": "!警告!",
+    "Author": "sch",
+    "Description": "近日突发大量未知原因封号事件,若非必要,请在调查清楚前停止使用yimmenu",
+    "Version": "1.00",
+    "Update": "2023/11/17",
+    "Size": "1.00 MB",
+    "Download": [
+      "https://t.com/CrazyZhang666/GTA5OnlineLua/main/YimMenu/AliceLua.zip"
+    ]
+  },
   {
     "Name": "Alice Lua",
     "Author": "Alice",
