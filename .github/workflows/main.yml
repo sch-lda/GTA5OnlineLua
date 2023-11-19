@@ -94,7 +94,7 @@ jobs:
              
       - name: mv Yim lib
         run: |
-          rm HeistLua/scripts/Alice-lib/lib.lua
+          rm HeistLua/scripts/Alice-lib/lib._lua
           cp tmpdir/Alice-Script/lib.lua HeistLua/scripts/Alice-lib/lib.lua
           
         
