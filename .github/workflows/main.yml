@@ -94,8 +94,8 @@ jobs:
              
       - name: mv Yim lib
         run: |
-          rm HeistLua/scripts/Alice-lib/lib._lua
-          cp tmpdir/Alice-Script/lib.lua HeistLua/scripts/Alice-lib/lib.lua
+          rm HeistLua/scripts/Alice-lib/lib.lua
+          cp tmpdir/Alice-Script/lib._lua HeistLua/scripts/Alice-lib/lib.lua
           
         
       - name: Upzip TCRoid's Scripts
