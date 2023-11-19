@@ -29,12 +29,6 @@
       <None Update="Kiddion\IdealLua.zip">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
-      <None Update="YimMenu\!警告.ini">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </None>
-      <None Update="YimMenu\!警告.zip">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </None>
       <None Update="YimMenu\AliceLua.ini">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
