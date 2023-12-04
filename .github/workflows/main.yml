@@ -90,13 +90,7 @@ jobs:
         
       - name: Upzip Alicelua for Yimmenu
         run: |
-             unzip GTA5OnlineLua/YimMenu/AliceLua.zip -d tmpdir/
-             
-      - name: mv Yim lib
-        run: |
-          rm HeistLua/scripts/Alice-lib/lib.lua
-          cp tmpdir/Alice-Script/lib._lua HeistLua/scripts/Alice-lib/lib.lua
-          
+             unzip GTA5OnlineLua/YimMenu/AliceLua.zip -d tmpdir/    
         
       - name: Upzip TCRoid's Scripts
         run: |
@@ -189,19 +183,6 @@ jobs:
           else
             echo "无需更新日期SchLua.ini"
           fi
-          
-      - name: Run Prometheus
-        run: |
-          lua Prometheus/cli.lua --preset Medium HeistLua/scripts/Heist.lua
-      
-      - name: Remove Raw Lua
-        run: |
-          rm HeistLua/scripts/Heist.lua
-        
-      - name: Rename Lua
-        run: |
-          cd HeistLua/scripts/
-          mv Heist.obfuscated.lua Heist.lua
         
       - name: HeistLua to Zip
         run: |
