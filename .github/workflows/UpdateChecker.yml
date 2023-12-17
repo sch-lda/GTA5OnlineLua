@@ -112,32 +112,7 @@ jobs:
          fi 
       - name: Create tmpdir
         run: mkdir tmpdir
-        
-      - name: Upzip TCRoid's Scripts
-        run: |
-             unzip GTA5OnlineLua/YimMenu/WeaponAttribute.zip -d tmpdir/
-             unzip GTA5OnlineLua/YimMenu/RScript.zip -d tmpdir/
-             
-      - name: WeaponAttribute Lua Update Checker
-        run: |
-           old_hash1=$(sha256sum tmpdir/WeaponAttribute.lua | awk '{print $1}')
-           new_hash1=$(sha256sum WeaponAttribute/WeaponAttribute.lua | awk '{print $1}')
-           if [ "$old_hash1" == "$new_hash1" ]; then
-            echo "WeaponAttribute无更新"
-           else
-            echo "WeaponAttribute更新" > trigger.txt
-           fi
-                        
-      - name: RScript Lua Update Checker
-        run: |
-           old_hash2=$(sha256sum tmpdir/RScript.lua | awk '{print $1}')
-           new_hash2=$(sha256sum RScript/RScript.lua | awk '{print $1}')
-           if [ "$old_hash2" == "$new_hash2" ]; then
-            echo "RScript.lua无更新"
-           else
-            echo "RScript发现更新" > trigger.txt
-           fi
-           
+                                  
       - name: Read HeistLua Real Version
         id: read_file
         run: |
