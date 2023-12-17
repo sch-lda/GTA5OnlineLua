@@ -155,18 +155,18 @@ jobs:
             echo "Update = $(date +'%Y/%m/%d')" >> GTA5OnlineLua/YimMenu/WeaponAttribute.ini
            fi
                         
-      - name: RScript Lua Update Checker
-        run: |
-           old_hash2=$(sha256sum tmpdir/RScript.lua | awk '{print $1}')
-           new_hash2=$(sha256sum RScript/RScript.lua | awk '{print $1}')
-           if [ "$old_hash2" == "$new_hash2" ]; then
-            echo "RScript.lua无更新"
-           else
-            zip -j -r tmpdir/RScript.zip RScript/RScript.lua
-            mv tmpdir/RScript.zip GTA5OnlineLua/YimMenu/
-            sed -i '/Update/d' GTA5OnlineLua/YimMenu/RScript.ini
-            echo "Update = $(date +'%Y/%m/%d')" >> GTA5OnlineLua/YimMenu/RScript.ini
-           fi
+     # - name: RScript Lua Update Checker
+     #   run: |
+     #      old_hash2=$(sha256sum tmpdir/RScript.lua | awk '{print $1}')
+     #      new_hash2=$(sha256sum RScript/RScript.lua | awk '{print $1}')
+     #      if [ "$old_hash2" == "$new_hash2" ]; then
+     #       echo "RScript.lua无更新"
+     #      else
+     #       zip -j -r tmpdir/RScript.zip RScript/RScript.lua
+     #       mv tmpdir/RScript.zip GTA5OnlineLua/YimMenu/
+     #       sed -i '/Update/d' GTA5OnlineLua/YimMenu/RScript.ini
+     #       echo "Update = $(date +'%Y/%m/%d')" >> GTA5OnlineLua/YimMenu/RScript.ini
+     #      fi
            
       - name: Read HeistLua Real Version
         id: read_file
