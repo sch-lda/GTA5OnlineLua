@@ -36,10 +36,10 @@
   {
     "Name": "RScript",
     "Author": "Rostal",
-    "Description": "一个可以控制载具实体的lua",
-    "Version": "1.01",
-    "Update": "2023/08/31",
-    "Size": "7.94 KB",
+    "Description": "载具、NPC实体管理控制，任务助手，和其它若干功能",
+    "Version": "3.01",
+    "Update": "2023/12/17",
+    "Size": "14.56 KB",
     "Download": [
       "https://blog.host3650.live/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenu/RScript.zip",
       "https://ghproxy.host3650.live/GTA5OnlineLua/YimMenu/RScript.zip",
