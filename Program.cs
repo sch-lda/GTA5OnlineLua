@@ -67,7 +67,6 @@ internal class Program
         var downloads = new List<string>
         {
             $"https://blog.host3650.live/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/{link}",
-            $"https://ghproxy.host3650.live/GTA5OnlineLua/{link}",
             $"https://ghproxy.net/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/{link}",
             $"https://gcore.jsdelivr.net/gh/CrazyZhang666/GTA5OnlineLua@main/{link}",
             $"https://jsdelivr.b-cdn.net/gh/CrazyZhang666/GTA5OnlineLua@main/{link}",
