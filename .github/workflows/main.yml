@@ -229,21 +229,25 @@ jobs:
             echo "无需更新日期SchLua.ini"
           fi
         
-      - name: HeistLua to Zip
+      - name: Update HeistLua 
         run: |
-          cd HeistLua/scripts/
-          zip -r ../HeistLua.zip .
+          if [[ "${{ steps.read_file.outputs.version }}" > "${{ steps.read_ini.outputs.version2 }}" ]]; then
+            cd HeistLua/scripts/
+            zip -r ../HeistLua.zip .
+            mv HeistLua/HeistLua.zip GTA5OnlineLua/YimMenu/
+          else
+            echo "无需更新HeistLua"
+          fi
           
-      - name: SchLua to Zip
+      - name: Update Schlua
         run: |
-          zip -j -r HeistLua/SchLua.zip SchLua/sch.lua
+          if [[ "${{ steps.read_sch.outputs.version3 }}" > "${{ steps.read_schini.outputs.version4 }}" ]]; then
+            zip -j -r HeistLua/SchLua.zip SchLua/sch.lua
+            mv HeistLua/SchLua.zip GTA5OnlineLua/YimMenu/
+          else
+            echo "无需更新SchLua"
+          fi
           
-      - name: move zip
-        run: |
-          mkdir -p out/
-          mv HeistLua/HeistLua.zip GTA5OnlineLua/YimMenu/
-          mv HeistLua/SchLua.zip GTA5OnlineLua/YimMenu/
-
       - name: git push
         run: |
           cd GTA5OnlineLua
@@ -253,7 +257,7 @@ jobs:
           git commit -m "Sync lua from other repo"
           git push
           
-  buildjson:
+  generatejson:
     needs: synclua
     runs-on: windows-latest
     steps:
@@ -308,10 +312,11 @@ jobs:
           git add .
           git commit -m "update json"
           git push
+          
   create_release:
     runs-on: ubuntu-latest
     name: Create Release
-    needs: buildjson
+    needs: generatejson
     steps:
        - name: Checkout GTA5OnlineLua Sources
          uses: actions/checkout@v3
