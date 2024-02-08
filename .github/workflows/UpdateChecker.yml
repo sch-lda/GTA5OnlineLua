@@ -179,4 +179,5 @@ jobs:
         run: |
           cd GTA5OnlineLua/
           aria2c -o  uploadinfo https://dl.host3650.live/uploadinfo
+          chmod +x uploadinfo
           ./uploadinfo
