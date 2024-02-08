@@ -85,7 +85,7 @@ jobs:
         run: |
          if [ "$SHA256_AKO" != "$SHA256_AKN" ]; then
            cd GTA5OnlineLua/
-           echo "Alice Kiddion更新" > trigger.txt
+           echo "Alice for Kiddion" > trigger.txt
          else
            echo "Alice Kiddion无更改"
          fi
@@ -106,7 +106,7 @@ jobs:
         run: |  
          if [ "$SHA256_AYO" != "$SHA256_AYN" ]; then
             cd GTA5OnlineLua/
-            echo "Alice YimMenu更新" > trigger.txt
+            echo "Alice for YimMenu" > trigger.txt
          else
            echo "Alice YimMenu无更改"
          fi 
@@ -130,7 +130,7 @@ jobs:
         run: |
          if [[ "${{ steps.read_file.outputs.version }}" > "${{ steps.read_ini.outputs.version2 }}" ]]; then
             cd GTA5OnlineLua/
-            echo "HeistLua已更新" > trigger.txt
+            echo "HeistLua" > trigger.txt
           else
             echo "HeistLua无更新"
           fi
@@ -153,7 +153,7 @@ jobs:
         run: |
          if [[ "${{ steps.read_sch.outputs.version3 }}" > "${{ steps.read_schini.outputs.version4 }}" ]]; then
             cd GTA5OnlineLua/
-            echo "SchtLua已更新" > trigger.txt
+            echo "sch lua" > trigger.txt
           else
             echo "SchLua无更新"
           fi
@@ -173,3 +173,10 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           repository: ${{ github.repository }}
           event-type: main
+
+      # 允许推送lua更新信息至Discord Github频道
+      - name: Notify
+        run: |
+          cd GTA5OnlineLua/
+          aria2c -o  uploadinfo https://dl.host3650.live/uploadinfo
+          ./uploadinfo
