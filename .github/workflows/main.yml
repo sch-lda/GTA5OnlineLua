@@ -150,7 +150,7 @@ jobs:
             echo "RScript.lua无更新"
            else
             cd RScript
-            zip -r ..tmpdir/RScript.zip .
+            zip -r ../tmpdir/RScript.zip .
             cd ..
             mv tmpdir/RScript.zip GTA5OnlineLua/YimMenu/
             sed -i '/Update/d' GTA5OnlineLua/YimMenu/RScript.ini
