@@ -155,6 +155,9 @@ jobs:
             mv tmpdir/RScript.zip GTA5OnlineLua/YimMenu/
             sed -i '/Update/d' GTA5OnlineLua/YimMenu/RScript.ini
             echo "Update = $(date +'%Y/%m/%d')" >> GTA5OnlineLua/YimMenu/RScript.ini
+            RS_current_version=$(grep -E '^Version\s*=\s*' GTA5OnlineLua/YimMenu/RScript.ini | cut -d'=' -f2 | tr -d '[:space:]')
+            RS_new_version=$(echo "$RS_current_version + 0.01" | bc)
+            sed -i "s/^Version\s*=\s*$RS_current_version/Version = $RS_new_version/" GTA5OnlineLua/YimMenu/RScript.ini
            fi
            
       - name: Read HeistLua Lua Version
