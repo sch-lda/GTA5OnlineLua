@@ -192,7 +192,7 @@ jobs:
           
       - name: Update Schlua ini Version
         run: |
-         if [[ "$Ver_SCHLua_R" != "$Ver_SCHLua_C" }}" ]]; then
+         if [[ "$Ver_SCHLua_R" != "$Ver_SCHLua_C" ]]; then
             sed -i "s/Version = $Ver_SCHLua_R/Version = $Ver_SCHLua_C/" GTA5OnlineLua/YimMenu/SchLua.ini
           else
             echo "无需更新版本号SchLua.ini"
@@ -200,7 +200,7 @@ jobs:
           
       - name: Update date SchLua
         run: |
-          if [[ "$Ver_SCHLua_R" != "$Ver_SCHLua_C" }}" ]]; then
+          if [[ "$Ver_SCHLua_R" != "$Ver_SCHLua_C" ]]; then
             sed -i '/Update/d' GTA5OnlineLua/YimMenu/SchLua.ini
             echo "Update = $(date +'%Y/%m/%d')" >> GTA5OnlineLua/YimMenu/SchLua.ini
           else
