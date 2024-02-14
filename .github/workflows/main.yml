@@ -219,7 +219,7 @@ jobs:
           
       - name: Update Schlua
         run: |
-          if [[ "$Ver_SCHLua_R" != "$Ver_SCHLua_C" }}" ]]; then
+          if [[ "$Ver_SCHLua_R" != "$Ver_SCHLua_C" ]]; then
             zip -j -r HeistLua/SchLua.zip SchLua/sch.lua
             mv HeistLua/SchLua.zip GTA5OnlineLua/YimMenu/
           else
