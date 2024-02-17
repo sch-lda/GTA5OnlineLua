@@ -171,7 +171,7 @@ jobs:
       - name: Update HeistLua ini Version
         run: |
          if [[ "$Ver_HeistLua_R" != "$Ver_HeistLua_C" ]]; then
-            sed -i "s/Version = $Ver_HeistLua_R/Version = $Ver_HeistLua_C/" GTA5OnlineLua/YimMenu/HeistLua.ini
+            sed -i "s/Version = $Ver_HeistLua_C/Version = $Ver_HeistLua_R/" GTA5OnlineLua/YimMenu/HeistLua.ini
           else
             echo "无需更新版本号"
           fi
@@ -196,7 +196,7 @@ jobs:
       - name: Update Schlua ini Version
         run: |
          if [[ "$Ver_SCHLua_R" != "$Ver_SCHLua_C" ]]; then
-            sed -i "s/Version = $Ver_SCHLua_R/Version = $Ver_SCHLua_C/" GTA5OnlineLua/YimMenu/SchLua.ini
+            sed -i "s/Version = $Ver_SCHLua_C/Version = $Ver_SCHLua_R/" GTA5OnlineLua/YimMenu/SchLua.ini
           else
             echo "无需更新版本号SchLua.ini"
           fi
