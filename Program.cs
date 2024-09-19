@@ -60,13 +60,51 @@ internal class Program
 
             Console.WriteLine($"{dirName} 脚本: {luaFileInfo.Name} 获取信息成功");
         }
+
+        if (dirName == "YimMenu")
+        {
+            var dir_yim_org = "YimMenuOrg";
+            foreach (var file in Directory.GetFiles($"./{dir_yim_org}"))
+            {
+                var fileInfo = new FileInfo(file);
+
+                if (fileInfo.Extension != ".ini")
+                    continue;
+
+                var luaFile = fileInfo.FullName.Replace(".ini", "") + ".zip";
+                var luaFileInfo = new FileInfo(luaFile);
+
+                var name = IniHelper.ReadValue("LuaInfo", "Name", file);
+                var author = IniHelper.ReadValue("LuaInfo", "Author", file);
+                var description = IniHelper.ReadValue("LuaInfo", "Description", file);
+                var version = IniHelper.ReadValue("LuaInfo", "Version", file);
+                var update = IniHelper.ReadValue("LuaInfo", "Update", file);
+
+                var size = GetFileFormatSize(luaFileInfo.Length);
+                var download = $"{dir_yim_org}/{luaFileInfo.Name}";
+
+                onlineLua.Add(new()
+                {
+                    Name = name,
+                    Author = author,
+                    Description = description,
+                    Version = version,
+                    Update = update,
+                    Size = size,
+                    Download = GetDownloadAddress(download)
+                });
+
+                Console.WriteLine($"{dirName} 脚本: {luaFileInfo.Name} 获取信息成功");
+            }
+
+        }
     }
 
     private static List<string> GetDownloadAddress(string link)
     {
         var downloads = new List<string>
         {
-            $"https://blog.host3650.live/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/{link}",
+            $"https://blog.cc2077.site/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/{link}",
             $"https://ghproxy.net/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/{link}",
             $"https://gcore.jsdelivr.net/gh/CrazyZhang666/GTA5OnlineLua@main/{link}",
             $"https://jsdelivr.b-cdn.net/gh/CrazyZhang666/GTA5OnlineLua@main/{link}",

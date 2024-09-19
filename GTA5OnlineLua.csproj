@@ -35,6 +35,12 @@
       <None Update="YimMenu\AliceLua.zip">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
+      <None Update="YimMenu\ExtrasAddon.ini">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="YimMenu\ExtrasAddon.zip">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
       <None Update="YimMenu\HeistLua.ini">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
@@ -45,6 +51,12 @@
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
       <None Update="YimMenu\RScript.zip">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="YimMenu\RS_Missions.ini">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="YimMenu\RS_Missions.zip">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
       <None Update="YimMenu\SchLua.ini">

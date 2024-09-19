@@ -3,9 +3,7 @@ name: Auto-sync-lua
 on:
   workflow_dispatch:
   repository_dispatch: # 允许通过 API 触发
-  push:
-    branches:
-    - main
+
     
 jobs:
   synclua:
@@ -44,8 +42,18 @@ jobs:
           path: RScript
           fetch-depth: 1
 
+      - name: Checkout RS-Missions Sources
+        uses: actions/checkout@v4
+        with:
+              repository: TCRoid/YimMenu-Lua-RS-Missions
+              path: RS-Missions
+              fetch-depth: 1
+  
       - name: git pull1
         run: |
+          cd RS-Missions
+          git pull
+          cd ..
           cd WeaponAttribute
           git pull
           cd ..
@@ -65,7 +73,7 @@ jobs:
         run: |
            mkdir AlicetmpKiddion
            cd AlicetmpKiddion
-           aria2c -o  AliceLua.zip https://dl.host3650.live/Lua/Alice-lua.zip
+           aria2c -o  AliceLua.zip https://rcus2.cc2077.site/Lua/Alice-lua.zip
 
       - name: Calculate SHA256 hash for oldAliceKid
         run: echo "SHA256_AKO=$(sha256sum GTA5OnlineLua/Kiddion/AliceLua.zip | cut -d' ' -f1)" >> $GITHUB_ENV
@@ -95,7 +103,7 @@ jobs:
         run: |
            mkdir AlicetmpYimmenu
            cd AlicetmpYimmenu
-           aria2c -o  AliceLua.zip https://dl.host3650.live/Lua/Alice2333_for_yimmenu.zip
+           aria2c -o  AliceLua.zip https://rcus2.cc2077.site/Lua/Alice2333_for_yimmenu.zip
 
       - name: Calculate SHA256 hash for oldAliceYim
         run: echo "SHA256_AYO=$(sha256sum GTA5OnlineLua/YimMenu/AliceLua.zip | cut -d' ' -f1)" >> $GITHUB_ENV
@@ -122,12 +130,15 @@ jobs:
          fi 
            
       - name: Create tmpdir
-        run: mkdir tmpdir
+        run: |
+             mkdir tmpdir
+             mkdir tmpdir2
         
       - name: Upzip TCRoid's Scripts
         run: |
              unzip GTA5OnlineLua/YimMenu/WeaponAttribute.zip -d tmpdir/
              unzip GTA5OnlineLua/YimMenu/RScript.zip -d tmpdir/
+             unzip GTA5OnlineLua/YimMenu/RS_Missions.zip -d tmpdir2/
              
       - name: WeaponAttribute Lua Update Checker
         run: |
@@ -141,7 +152,20 @@ jobs:
             sed -i '/Update/d' GTA5OnlineLua/YimMenu/WeaponAttribute.ini
             echo "Update = $(date +'%Y/%m/%d')" >> GTA5OnlineLua/YimMenu/WeaponAttribute.ini
            fi
-                        
+
+      - name: RS_Missions Lua Update Checker
+        run: |
+              old_hash3=$(sha256sum tmpdir2/RS_Missions.lua | awk '{print $1}')
+              new_hash3=$(sha256sum RS-Missions/RS_Missions.lua | awk '{print $1}')
+              if [ "$old_hash3" == "$new_hash3" ]; then
+               echo "RS-Missions无更新"
+              else
+               zip -j -r tmpdir2/RS_Missions.zip RS-Missions/RS_Missions.lua
+               mv tmpdir2/RS_Missions.zip GTA5OnlineLua/YimMenu/
+               sed -i '/Update/d' GTA5OnlineLua/YimMenu/RS_Missions.ini
+               echo "Update = $(date +'%Y/%m/%d')" >> GTA5OnlineLua/YimMenu/RS_Missions.ini
+              fi      
+
       - name: RScript Lua Update Checker
         run: |
            old_hash2=$(sha256sum tmpdir/RScript.lua | awk '{print $1}')
@@ -215,6 +239,7 @@ jobs:
           if [[ "$Ver_HeistLua_R" != "$Ver_HeistLua_C" ]]; then
             cd HeistLua/scripts/
             zip -r ../HeistLua.zip .
+            cd ../..
             mv HeistLua/HeistLua.zip GTA5OnlineLua/YimMenu/
           else
             echo "无需更新HeistLua"
@@ -271,13 +296,22 @@ jobs:
          
        - name: Run GTA5OnlineLua
          run: |
-             cd GTA5OnlineLua/bin/Release/net6.0/
-             ./GTA5OnlineLua.exe
+              copy GTA5OnlineLua/bin/Release/net6.0/GTA5OnlineLua.exe GTA5OnlineLua/GTA5OnlineLua.exe
+              copy GTA5OnlineLua/bin/Release/net6.0/GTA5OnlineLua.dll GTA5OnlineLua/GTA5OnlineLua.dll
+              copy GTA5OnlineLua/bin/Release/net6.0/GTA5OnlineLua.runtimeconfig.json GTA5OnlineLua/GTA5OnlineLua.runtimeconfig.json
+              cd GTA5OnlineLua
+              ./GTA5OnlineLua.exe
+              cd ..
+              rm GTA5OnlineLua/GTA5OnlineLua.exe
+              rm GTA5OnlineLua/GTA5OnlineLua.dll
+              rm GTA5OnlineLua/GTA5OnlineLua.runtimeconfig.json
            
        - name: Copy Json
          run: |
-           copy ./GTA5OnlineLua/bin/Release/net6.0/Kiddion.json  GTA5OnlineLua/Release/Kiddion.json  
-           copy ./GTA5OnlineLua/bin/Release/net6.0/YimMenu.json  GTA5OnlineLua/Release/YimMenu.json  
+            copy ./GTA5OnlineLua/Kiddion.json  GTA5OnlineLua/Release/Kiddion.json  
+            copy ./GTA5OnlineLua/YimMenu.json  GTA5OnlineLua/Release/YimMenu.json  
+            rm GTA5OnlineLua/Kiddion.json
+            rm GTA5OnlineLua/YimMenu.json
            
        - name: Upload json
          uses: actions/upload-artifact@v3

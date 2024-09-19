@@ -2,12 +2,12 @@
   {
     "Name": "Alice Lua",
     "Author": "Alice",
-    "Description": "[已适配GTAOL1.68]一款由Alice大佬开发的YimMenu使用的Lua脚本",
-    "Version": "3.06",
-    "Update": "2024/02/12",
-    "Size": "1.11 MB",
+    "Description": "一款由Alice大佬开发的YimMenu使用的Lua脚本",
+    "Version": "3.28",
+    "Update": "2024/07/04",
+    "Size": "1006.02 KB",
     "Download": [
-      "https://blog.host3650.live/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenu/AliceLua.zip",
+      "https://blog.cc2077.site/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenu/AliceLua.zip",
       "https://ghproxy.net/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenu/AliceLua.zip",
       "https://gcore.jsdelivr.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenu/AliceLua.zip",
       "https://jsdelivr.b-cdn.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenu/AliceLua.zip",
@@ -19,11 +19,11 @@
     "Name": "Heist Lua",
     "Author": "wangzixuan",
     "Description": "佩岛/赌场/末日任务脚本",
-    "Version": "1.84",
-    "Update": "2023/07/29",
-    "Size": "96.24 KB",
+    "Version": "1.88",
+    "Update": "2024/07/15",
+    "Size": "4.66 KB",
     "Download": [
-      "https://blog.host3650.live/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenu/HeistLua.zip",
+      "https://blog.cc2077.site/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenu/HeistLua.zip",
       "https://ghproxy.net/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenu/HeistLua.zip",
       "https://gcore.jsdelivr.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenu/HeistLua.zip",
       "https://jsdelivr.b-cdn.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenu/HeistLua.zip",
@@ -34,12 +34,12 @@
   {
     "Name": "RScript",
     "Author": "Rostal",
-    "Description": "[适配GTAOL1.68]载具、NPC实体管理控制，任务助手，和其它若干功能",
-    "Version": "3.01",
-    "Update": "2024/02/14",
-    "Size": "115.15 KB",
+    "Description": "载具、NPC实体管理控制，任务助手，和其它若干功能",
+    "Version": "3.04",
+    "Update": "2024/09/15",
+    "Size": "129.92 KB",
     "Download": [
-      "https://blog.host3650.live/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenu/RScript.zip",
+      "https://blog.cc2077.site/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenu/RScript.zip",
       "https://ghproxy.net/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenu/RScript.zip",
       "https://gcore.jsdelivr.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenu/RScript.zip",
       "https://jsdelivr.b-cdn.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenu/RScript.zip",
@@ -48,14 +48,30 @@
     ]
   },
   {
+    "Name": "RS_Missions",
+    "Author": "Rostal",
+    "Description": "单人启动任务，直接完成任务，无需前置直接启动抢劫终章差事",
+    "Version": "3.01",
+    "Update": "2024/08/26",
+    "Size": "19.04 KB",
+    "Download": [
+      "https://blog.cc2077.site/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenu/RS_Missions.zip",
+      "https://ghproxy.net/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenu/RS_Missions.zip",
+      "https://gcore.jsdelivr.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenu/RS_Missions.zip",
+      "https://jsdelivr.b-cdn.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenu/RS_Missions.zip",
+      "https://github.moeyy.xyz/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenu/RS_Missions.zip",
+      "https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenu/RS_Missions.zip"
+    ]
+  },
+  {
     "Name": "SCH Lua",
     "Author": "sch",
-    "Description": "[适配GTAOL1.68]discord用户yeahsch的自用脚本,第一个开源yim开发者示例lua",
-    "Version": "3.22",
-    "Update": "2024/02/18",
-    "Size": "63.29 KB",
+    "Description": "discord用户yeahsch的自用脚本,第一个开源yim开发者示例lua",
+    "Version": "4.07",
+    "Update": "2024/08/23",
+    "Size": "68.05 KB",
     "Download": [
-      "https://blog.host3650.live/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenu/SchLua.zip",
+      "https://blog.cc2077.site/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenu/SchLua.zip",
       "https://ghproxy.net/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenu/SchLua.zip",
       "https://gcore.jsdelivr.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenu/SchLua.zip",
       "https://jsdelivr.b-cdn.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenu/SchLua.zip",
@@ -71,12 +87,620 @@
     "Update": "2023/07/30",
     "Size": "2.50 KB",
     "Download": [
-      "https://blog.host3650.live/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenu/WeaponAttribute.zip",
+      "https://blog.cc2077.site/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenu/WeaponAttribute.zip",
       "https://ghproxy.net/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenu/WeaponAttribute.zip",
       "https://gcore.jsdelivr.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenu/WeaponAttribute.zip",
       "https://jsdelivr.b-cdn.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenu/WeaponAttribute.zip",
       "https://github.moeyy.xyz/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenu/WeaponAttribute.zip",
       "https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenu/WeaponAttribute.zip"
+    ]
+  },
+  {
+    "Name": "[国外]AcidLab-Script",
+    "Author": "镜像自YimMenu官方Lua仓库,定期同步",
+    "Description": "AcidLab_features_like_product_value_changer_capacity_changer_and_etc",
+    "Version": "0.00",
+    "Update": "2023/11/06",
+    "Size": "0.83 KB",
+    "Download": [
+      "https://blog.cc2077.site/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/AcidLab-Script.zip",
+      "https://ghproxy.net/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/AcidLab-Script.zip",
+      "https://gcore.jsdelivr.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/AcidLab-Script.zip",
+      "https://jsdelivr.b-cdn.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/AcidLab-Script.zip",
+      "https://github.moeyy.xyz/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/AcidLab-Script.zip",
+      "https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/AcidLab-Script.zip"
+    ]
+  },
+  {
+    "Name": "[国外]Alestarov-Menu",
+    "Author": "镜像自YimMenu官方Lua仓库,定期同步",
+    "Description": "This is a lua build that contains the best ways to cheat Money, Clear statistics, Heist editor and much more. The script will be constantly updated. It contains the best features from other scripts.",
+    "Version": "0.00",
+    "Update": "2024/02/26",
+    "Size": "5.57 KB",
+    "Download": [
+      "https://blog.cc2077.site/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/Alestarov-Menu.zip",
+      "https://ghproxy.net/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/Alestarov-Menu.zip",
+      "https://gcore.jsdelivr.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/Alestarov-Menu.zip",
+      "https://jsdelivr.b-cdn.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/Alestarov-Menu.zip",
+      "https://github.moeyy.xyz/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/Alestarov-Menu.zip",
+      "https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/Alestarov-Menu.zip"
+    ]
+  },
+  {
+    "Name": "[国外]ArcadeGames",
+    "Author": "镜像自YimMenu官方Lua仓库,定期同步",
+    "Description": "Allows you to manipulate Arcade games.",
+    "Version": "0.00",
+    "Update": "2024/09/02",
+    "Size": "2.01 KB",
+    "Download": [
+      "https://blog.cc2077.site/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/ArcadeGames.zip",
+      "https://ghproxy.net/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/ArcadeGames.zip",
+      "https://gcore.jsdelivr.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/ArcadeGames.zip",
+      "https://jsdelivr.b-cdn.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/ArcadeGames.zip",
+      "https://github.moeyy.xyz/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/ArcadeGames.zip",
+      "https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/ArcadeGames.zip"
+    ]
+  },
+  {
+    "Name": "[国外]Billionare-Services",
+    "Author": "镜像自YimMenu官方Lua仓库,定期同步",
+    "Description": "Lua script that provides VIP services for GTA V players.",
+    "Version": "0.00",
+    "Update": "2024/06/16",
+    "Size": "33.20 KB",
+    "Download": [
+      "https://blog.cc2077.site/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/Billionare-Services.zip",
+      "https://ghproxy.net/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/Billionare-Services.zip",
+      "https://gcore.jsdelivr.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/Billionare-Services.zip",
+      "https://jsdelivr.b-cdn.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/Billionare-Services.zip",
+      "https://github.moeyy.xyz/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/Billionare-Services.zip",
+      "https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/Billionare-Services.zip"
+    ]
+  },
+  {
+    "Name": "[国外]Casino-Pacino",
+    "Author": "镜像自YimMenu官方Lua仓库,定期同步",
+    "Description": "Allows you to game the Casino by cheating at all the games, and also manipulating the casino heists.",
+    "Version": "0.00",
+    "Update": "2024/08/01",
+    "Size": "9.16 KB",
+    "Download": [
+      "https://blog.cc2077.site/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/Casino-Pacino.zip",
+      "https://ghproxy.net/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/Casino-Pacino.zip",
+      "https://gcore.jsdelivr.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/Casino-Pacino.zip",
+      "https://jsdelivr.b-cdn.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/Casino-Pacino.zip",
+      "https://github.moeyy.xyz/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/Casino-Pacino.zip",
+      "https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/Casino-Pacino.zip"
+    ]
+  },
+  {
+    "Name": "[国外]CheatCodes",
+    "Author": "镜像自YimMenu官方Lua仓库,定期同步",
+    "Description": "Enables cheat codes in GTA Online.",
+    "Version": "0.00",
+    "Update": "2024/09/02",
+    "Size": "0.52 KB",
+    "Download": [
+      "https://blog.cc2077.site/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/CheatCodes.zip",
+      "https://ghproxy.net/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/CheatCodes.zip",
+      "https://gcore.jsdelivr.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/CheatCodes.zip",
+      "https://jsdelivr.b-cdn.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/CheatCodes.zip",
+      "https://github.moeyy.xyz/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/CheatCodes.zip",
+      "https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/CheatCodes.zip"
+    ]
+  },
+  {
+    "Name": "[国外]ClawCrane",
+    "Author": "镜像自YimMenu官方Lua仓库,定期同步",
+    "Description": "Aims to fix the broken grab offset of Shiny Wasabi Kitty plushie so that you can actually grab it.",
+    "Version": "0.00",
+    "Update": "2024/09/04",
+    "Size": "1.85 KB",
+    "Download": [
+      "https://blog.cc2077.site/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/ClawCrane.zip",
+      "https://ghproxy.net/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/ClawCrane.zip",
+      "https://gcore.jsdelivr.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/ClawCrane.zip",
+      "https://jsdelivr.b-cdn.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/ClawCrane.zip",
+      "https://github.moeyy.xyz/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/ClawCrane.zip",
+      "https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/ClawCrane.zip"
+    ]
+  },
+  {
+    "Name": "[国外]Cutscene-Player",
+    "Author": "镜像自YimMenu官方Lua仓库,定期同步",
+    "Description": "Allows you to play cutscenes.",
+    "Version": "0.00",
+    "Update": "2024/07/09",
+    "Size": "3.74 KB",
+    "Download": [
+      "https://blog.cc2077.site/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/Cutscene-Player.zip",
+      "https://ghproxy.net/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/Cutscene-Player.zip",
+      "https://gcore.jsdelivr.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/Cutscene-Player.zip",
+      "https://jsdelivr.b-cdn.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/Cutscene-Player.zip",
+      "https://github.moeyy.xyz/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/Cutscene-Player.zip",
+      "https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/Cutscene-Player.zip"
+    ]
+  },
+  {
+    "Name": "[国外]DailyCollectibles",
+    "Author": "镜像自YimMenu官方Lua仓库,定期同步",
+    "Description": "A lua script that allows you to view daily collectibles\u0027 locations, teleport, and more stuff.",
+    "Version": "0.00",
+    "Update": "2024/09/08",
+    "Size": "7.87 KB",
+    "Download": [
+      "https://blog.cc2077.site/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/DailyCollectibles.zip",
+      "https://ghproxy.net/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/DailyCollectibles.zip",
+      "https://gcore.jsdelivr.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/DailyCollectibles.zip",
+      "https://jsdelivr.b-cdn.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/DailyCollectibles.zip",
+      "https://github.moeyy.xyz/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/DailyCollectibles.zip",
+      "https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/DailyCollectibles.zip"
+    ]
+  },
+  {
+    "Name": "[国外]DLCVehicles",
+    "Author": "镜像自YimMenu官方Lua仓库,定期同步",
+    "Description": "Enables all tunable vehicles. This should work for future DLCs as well without requiring an update.",
+    "Version": "0.00",
+    "Update": "2024/09/03",
+    "Size": "0.34 KB",
+    "Download": [
+      "https://blog.cc2077.site/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/DLCVehicles.zip",
+      "https://ghproxy.net/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/DLCVehicles.zip",
+      "https://gcore.jsdelivr.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/DLCVehicles.zip",
+      "https://jsdelivr.b-cdn.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/DLCVehicles.zip",
+      "https://github.moeyy.xyz/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/DLCVehicles.zip",
+      "https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/DLCVehicles.zip"
+    ]
+  },
+  {
+    "Name": "[国外]EliteTracker",
+    "Author": "镜像自YimMenu官方Lua仓库,定期同步",
+    "Description": "Allows you to track your Elite Challenge progresses.",
+    "Version": "0.00",
+    "Update": "2024/07/09",
+    "Size": "3.01 KB",
+    "Download": [
+      "https://blog.cc2077.site/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/EliteTracker.zip",
+      "https://ghproxy.net/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/EliteTracker.zip",
+      "https://gcore.jsdelivr.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/EliteTracker.zip",
+      "https://jsdelivr.b-cdn.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/EliteTracker.zip",
+      "https://github.moeyy.xyz/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/EliteTracker.zip",
+      "https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/EliteTracker.zip"
+    ]
+  },
+  {
+    "Name": "[国外]FMTransactionTriggerer",
+    "Author": "镜像自YimMenu官方Lua仓库,定期同步",
+    "Description": "Allows you to trigger transactions via the freemode script. Experimental only, use at your own risk.",
+    "Version": "0.00",
+    "Update": "2024/08/06",
+    "Size": "2.94 KB",
+    "Download": [
+      "https://blog.cc2077.site/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/FMTransactionTriggerer.zip",
+      "https://ghproxy.net/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/FMTransactionTriggerer.zip",
+      "https://gcore.jsdelivr.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/FMTransactionTriggerer.zip",
+      "https://jsdelivr.b-cdn.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/FMTransactionTriggerer.zip",
+      "https://github.moeyy.xyz/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/FMTransactionTriggerer.zip",
+      "https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/FMTransactionTriggerer.zip"
+    ]
+  },
+  {
+    "Name": "[国外]FullSnacks",
+    "Author": "镜像自YimMenu官方Lua仓库,定期同步",
+    "Description": "Fills your snacks every so often",
+    "Version": "0.00",
+    "Update": "2024/07/02",
+    "Size": "0.61 KB",
+    "Download": [
+      "https://blog.cc2077.site/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/FullSnacks.zip",
+      "https://ghproxy.net/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/FullSnacks.zip",
+      "https://gcore.jsdelivr.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/FullSnacks.zip",
+      "https://jsdelivr.b-cdn.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/FullSnacks.zip",
+      "https://github.moeyy.xyz/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/FullSnacks.zip",
+      "https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/FullSnacks.zip"
+    ]
+  },
+  {
+    "Name": "[国外]G9EC",
+    "Author": "镜像自YimMenu官方Lua仓库,定期同步",
+    "Description": "Enables next-gen exclusive clothing items in the store.",
+    "Version": "0.00",
+    "Update": "2024/09/07",
+    "Size": "0.46 KB",
+    "Download": [
+      "https://blog.cc2077.site/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/G9EC.zip",
+      "https://ghproxy.net/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/G9EC.zip",
+      "https://gcore.jsdelivr.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/G9EC.zip",
+      "https://jsdelivr.b-cdn.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/G9EC.zip",
+      "https://github.moeyy.xyz/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/G9EC.zip",
+      "https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/G9EC.zip"
+    ]
+  },
+  {
+    "Name": "[国外]GroundFireworks",
+    "Author": "镜像自YimMenu官方Lua仓库,定期同步",
+    "Description": "Adds ground fireworks that work similar to ground fireworks from old GTA Online",
+    "Version": "0.00",
+    "Update": "2024/08/03",
+    "Size": "2.52 KB",
+    "Download": [
+      "https://blog.cc2077.site/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/GroundFireworks.zip",
+      "https://ghproxy.net/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/GroundFireworks.zip",
+      "https://gcore.jsdelivr.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/GroundFireworks.zip",
+      "https://jsdelivr.b-cdn.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/GroundFireworks.zip",
+      "https://github.moeyy.xyz/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/GroundFireworks.zip",
+      "https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/GroundFireworks.zip"
+    ]
+  },
+  {
+    "Name": "[国外]GunVan",
+    "Author": "镜像自YimMenu官方Lua仓库,定期同步",
+    "Description": "Allows you to edit Gun Van weapons and more.",
+    "Version": "0.00",
+    "Update": "2024/08/12",
+    "Size": "2.83 KB",
+    "Download": [
+      "https://blog.cc2077.site/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/GunVan.zip",
+      "https://ghproxy.net/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/GunVan.zip",
+      "https://gcore.jsdelivr.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/GunVan.zip",
+      "https://jsdelivr.b-cdn.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/GunVan.zip",
+      "https://github.moeyy.xyz/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/GunVan.zip",
+      "https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/GunVan.zip"
+    ]
+  },
+  {
+    "Name": "[国外]Harmless-Scripts",
+    "Author": "镜像自YimMenu官方Lua仓库,定期同步",
+    "Description": "Repo for Lua scripts made by Harmless for YimMenu",
+    "Version": "0.00",
+    "Update": "2024/08/17",
+    "Size": "16.88 KB",
+    "Download": [
+      "https://blog.cc2077.site/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/Harmless-Scripts.zip",
+      "https://ghproxy.net/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/Harmless-Scripts.zip",
+      "https://gcore.jsdelivr.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/Harmless-Scripts.zip",
+      "https://jsdelivr.b-cdn.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/Harmless-Scripts.zip",
+      "https://github.moeyy.xyz/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/Harmless-Scripts.zip",
+      "https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/Harmless-Scripts.zip"
+    ]
+  },
+  {
+    "Name": "[国外]Internet",
+    "Author": "镜像自YimMenu官方Lua仓库,定期同步",
+    "Description": "Allows you to open various computers.",
+    "Version": "0.00",
+    "Update": "2024/07/08",
+    "Size": "1.00 KB",
+    "Download": [
+      "https://blog.cc2077.site/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/Internet.zip",
+      "https://ghproxy.net/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/Internet.zip",
+      "https://gcore.jsdelivr.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/Internet.zip",
+      "https://jsdelivr.b-cdn.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/Internet.zip",
+      "https://github.moeyy.xyz/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/Internet.zip",
+      "https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/Internet.zip"
+    ]
+  },
+  {
+    "Name": "[国外]MiniGameHack",
+    "Author": "镜像自YimMenu官方Lua仓库,定期同步",
+    "Description": "Minigame instant complete, skip hacking process",
+    "Version": "0.00",
+    "Update": "2024/07/18",
+    "Size": "2.70 KB",
+    "Download": [
+      "https://blog.cc2077.site/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/MiniGameHack.zip",
+      "https://ghproxy.net/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/MiniGameHack.zip",
+      "https://gcore.jsdelivr.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/MiniGameHack.zip",
+      "https://jsdelivr.b-cdn.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/MiniGameHack.zip",
+      "https://github.moeyy.xyz/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/MiniGameHack.zip",
+      "https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/MiniGameHack.zip"
+    ]
+  },
+  {
+    "Name": "[国外]PayphoneHits",
+    "Author": "镜像自YimMenu官方Lua仓库,定期同步",
+    "Description": "A Lua script for Payphone Hits.",
+    "Version": "0.00",
+    "Update": "2024/08/15",
+    "Size": "1.74 KB",
+    "Download": [
+      "https://blog.cc2077.site/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/PayphoneHits.zip",
+      "https://ghproxy.net/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/PayphoneHits.zip",
+      "https://gcore.jsdelivr.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/PayphoneHits.zip",
+      "https://jsdelivr.b-cdn.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/PayphoneHits.zip",
+      "https://github.moeyy.xyz/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/PayphoneHits.zip",
+      "https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/PayphoneHits.zip"
+    ]
+  },
+  {
+    "Name": "[国外]Pesiv2-Updated",
+    "Author": "镜像自YimMenu官方Lua仓库,定期同步",
+    "Description": "Pesiv2 but it\u0027s actually updated and uses YimMenu\u0027s GUI",
+    "Version": "0.00",
+    "Update": "2024/07/05",
+    "Size": "1.44 KB",
+    "Download": [
+      "https://blog.cc2077.site/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/Pesiv2-Updated.zip",
+      "https://ghproxy.net/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/Pesiv2-Updated.zip",
+      "https://gcore.jsdelivr.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/Pesiv2-Updated.zip",
+      "https://jsdelivr.b-cdn.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/Pesiv2-Updated.zip",
+      "https://github.moeyy.xyz/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/Pesiv2-Updated.zip",
+      "https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/Pesiv2-Updated.zip"
+    ]
+  },
+  {
+    "Name": "[国外]Pessi",
+    "Author": "镜像自YimMenu官方Lua仓库,定期同步",
+    "Description": "Pessi is mainly a recovery script, with various methods, ranging from a 1M fast loop to various limited transactions",
+    "Version": "0.00",
+    "Update": "2024/07/14",
+    "Size": "1.67 KB",
+    "Download": [
+      "https://blog.cc2077.site/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/Pessi.zip",
+      "https://ghproxy.net/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/Pessi.zip",
+      "https://gcore.jsdelivr.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/Pessi.zip",
+      "https://jsdelivr.b-cdn.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/Pessi.zip",
+      "https://github.moeyy.xyz/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/Pessi.zip",
+      "https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/Pessi.zip"
+    ]
+  },
+  {
+    "Name": "[国外]Phone-Editor",
+    "Author": "镜像自YimMenu官方Lua仓库,定期同步",
+    "Description": "A script that allows you to change the player\u0027s phone",
+    "Version": "0.00",
+    "Update": "2024/09/07",
+    "Size": "2.32 KB",
+    "Download": [
+      "https://blog.cc2077.site/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/Phone-Editor.zip",
+      "https://ghproxy.net/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/Phone-Editor.zip",
+      "https://gcore.jsdelivr.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/Phone-Editor.zip",
+      "https://jsdelivr.b-cdn.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/Phone-Editor.zip",
+      "https://github.moeyy.xyz/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/Phone-Editor.zip",
+      "https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/Phone-Editor.zip"
+    ]
+  },
+  {
+    "Name": "[国外]PrizeVehicles",
+    "Author": "镜像自YimMenu官方Lua仓库,定期同步",
+    "Description": "Allows you to edit prize vehicles such as Podium, LSCM, etc.",
+    "Version": "0.00",
+    "Update": "2024/04/19",
+    "Size": "2.03 KB",
+    "Download": [
+      "https://blog.cc2077.site/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/PrizeVehicles.zip",
+      "https://ghproxy.net/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/PrizeVehicles.zip",
+      "https://gcore.jsdelivr.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/PrizeVehicles.zip",
+      "https://jsdelivr.b-cdn.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/PrizeVehicles.zip",
+      "https://github.moeyy.xyz/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/PrizeVehicles.zip",
+      "https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/PrizeVehicles.zip"
+    ]
+  },
+  {
+    "Name": "[国外]RandomEvents",
+    "Author": "镜像自YimMenu官方Lua仓库,定期同步",
+    "Description": "A Lua script for YimMenu about Random Events.",
+    "Version": "0.00",
+    "Update": "2024/08/24",
+    "Size": "8.40 KB",
+    "Download": [
+      "https://blog.cc2077.site/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/RandomEvents.zip",
+      "https://ghproxy.net/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/RandomEvents.zip",
+      "https://gcore.jsdelivr.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/RandomEvents.zip",
+      "https://jsdelivr.b-cdn.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/RandomEvents.zip",
+      "https://github.moeyy.xyz/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/RandomEvents.zip",
+      "https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/RandomEvents.zip"
+    ]
+  },
+  {
+    "Name": "[国外]Removed-vehicles",
+    "Author": "镜像自YimMenu官方Lua仓库,定期同步",
+    "Description": "Re-activate the option to purchase the removed vehicles through the web pages. ",
+    "Version": "0.00",
+    "Update": "2024/07/16",
+    "Size": "0.88 KB",
+    "Download": [
+      "https://blog.cc2077.site/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/Removed-vehicles.zip",
+      "https://ghproxy.net/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/Removed-vehicles.zip",
+      "https://gcore.jsdelivr.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/Removed-vehicles.zip",
+      "https://jsdelivr.b-cdn.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/Removed-vehicles.zip",
+      "https://github.moeyy.xyz/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/Removed-vehicles.zip",
+      "https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/Removed-vehicles.zip"
+    ]
+  },
+  {
+    "Name": "[国外]SalvageYard",
+    "Author": "镜像自YimMenu官方Lua仓库,定期同步",
+    "Description": "Allows you to manage your Salvage Yard business.",
+    "Version": "0.00",
+    "Update": "2023/12/20",
+    "Size": "1.73 KB",
+    "Download": [
+      "https://blog.cc2077.site/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/SalvageYard.zip",
+      "https://ghproxy.net/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/SalvageYard.zip",
+      "https://gcore.jsdelivr.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/SalvageYard.zip",
+      "https://jsdelivr.b-cdn.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/SalvageYard.zip",
+      "https://github.moeyy.xyz/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/SalvageYard.zip",
+      "https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/SalvageYard.zip"
+    ]
+  },
+  {
+    "Name": "[国外]SAMURAI-Animations",
+    "Author": "镜像自YimMenu官方Lua仓库,定期同步",
+    "Description": "Lua script to play GTA Online Animations using YimMenu.",
+    "Version": "0.00",
+    "Update": "2024/03/11",
+    "Size": "7.50 KB",
+    "Download": [
+      "https://blog.cc2077.site/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/SAMURAI-Animations.zip",
+      "https://ghproxy.net/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/SAMURAI-Animations.zip",
+      "https://gcore.jsdelivr.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/SAMURAI-Animations.zip",
+      "https://jsdelivr.b-cdn.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/SAMURAI-Animations.zip",
+      "https://github.moeyy.xyz/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/SAMURAI-Animations.zip",
+      "https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/SAMURAI-Animations.zip"
+    ]
+  },
+  {
+    "Name": "[国外]SAMURAI-Scenarios",
+    "Author": "镜像自YimMenu官方Lua仓库,定期同步",
+    "Description": "Lua script to play GTA Online scenarios using YimMenu.",
+    "Version": "0.00",
+    "Update": "2024/03/11",
+    "Size": "2.66 KB",
+    "Download": [
+      "https://blog.cc2077.site/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/SAMURAI-Scenarios.zip",
+      "https://ghproxy.net/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/SAMURAI-Scenarios.zip",
+      "https://gcore.jsdelivr.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/SAMURAI-Scenarios.zip",
+      "https://jsdelivr.b-cdn.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/SAMURAI-Scenarios.zip",
+      "https://github.moeyy.xyz/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/SAMURAI-Scenarios.zip",
+      "https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/SAMURAI-Scenarios.zip"
+    ]
+  },
+  {
+    "Name": "[国外]Samurais-Scripts",
+    "Author": "镜像自YimMenu官方Lua仓库,定期同步",
+    "Description": "A base for a Lua script centered around roleplaying and having fun in a game full of ad bots and toxic cheaters.",
+    "Version": "0.00",
+    "Update": "2024/09/14",
+    "Size": "490.60 KB",
+    "Download": [
+      "https://blog.cc2077.site/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/Samurais-Scripts.zip",
+      "https://ghproxy.net/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/Samurais-Scripts.zip",
+      "https://gcore.jsdelivr.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/Samurais-Scripts.zip",
+      "https://jsdelivr.b-cdn.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/Samurais-Scripts.zip",
+      "https://github.moeyy.xyz/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/Samurais-Scripts.zip",
+      "https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/Samurais-Scripts.zip"
+    ]
+  },
+  {
+    "Name": "[国外]Sightseeing",
+    "Author": "镜像自YimMenu官方Lua仓库,定期同步",
+    "Description": "A proper script for the Halloween Sightseeing event.",
+    "Version": "0.00",
+    "Update": "2024/07/09",
+    "Size": "2.44 KB",
+    "Download": [
+      "https://blog.cc2077.site/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/Sightseeing.zip",
+      "https://ghproxy.net/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/Sightseeing.zip",
+      "https://gcore.jsdelivr.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/Sightseeing.zip",
+      "https://jsdelivr.b-cdn.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/Sightseeing.zip",
+      "https://github.moeyy.xyz/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/Sightseeing.zip",
+      "https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/Sightseeing.zip"
+    ]
+  },
+  {
+    "Name": "[国外]Singleplayer-Menu",
+    "Author": "镜像自YimMenu官方Lua仓库,定期同步",
+    "Description": "Simple singleplayer cheats.",
+    "Version": "0.00",
+    "Update": "2024/07/23",
+    "Size": "0.95 KB",
+    "Download": [
+      "https://blog.cc2077.site/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/Singleplayer-Menu.zip",
+      "https://ghproxy.net/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/Singleplayer-Menu.zip",
+      "https://gcore.jsdelivr.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/Singleplayer-Menu.zip",
+      "https://jsdelivr.b-cdn.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/Singleplayer-Menu.zip",
+      "https://github.moeyy.xyz/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/Singleplayer-Menu.zip",
+      "https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/Singleplayer-Menu.zip"
+    ]
+  },
+  {
+    "Name": "[国外]TokyoDrift",
+    "Author": "镜像自YimMenu官方Lua仓库,定期同步",
+    "Description": "Adds a few fun features for car enthusiasts.",
+    "Version": "0.00",
+    "Update": "2024/08/14",
+    "Size": "11.44 KB",
+    "Download": [
+      "https://blog.cc2077.site/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/TokyoDrift.zip",
+      "https://ghproxy.net/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/TokyoDrift.zip",
+      "https://gcore.jsdelivr.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/TokyoDrift.zip",
+      "https://jsdelivr.b-cdn.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/TokyoDrift.zip",
+      "https://github.moeyy.xyz/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/TokyoDrift.zip",
+      "https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/TokyoDrift.zip"
+    ]
+  },
+  {
+    "Name": "[国外]UnlockEverything",
+    "Author": "镜像自YimMenu官方Lua仓库,定期同步",
+    "Description": "Unlocks everything ",
+    "Version": "0.00",
+    "Update": "2024/08/19",
+    "Size": "26.53 KB",
+    "Download": [
+      "https://blog.cc2077.site/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/UnlockEverything.zip",
+      "https://ghproxy.net/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/UnlockEverything.zip",
+      "https://gcore.jsdelivr.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/UnlockEverything.zip",
+      "https://jsdelivr.b-cdn.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/UnlockEverything.zip",
+      "https://github.moeyy.xyz/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/UnlockEverything.zip",
+      "https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/UnlockEverything.zip"
+    ]
+  },
+  {
+    "Name": "[国外]Weapon-Editor",
+    "Author": "镜像自YimMenu官方Lua仓库,定期同步",
+    "Description": "WeaponEditor is a lua script that lets you mod weapons.meta externally while the game is running. You can mod weapon behaviour, add attachments etc. without actually changing the game files.",
+    "Version": "0.00",
+    "Update": "2024/01/16",
+    "Size": "31.57 KB",
+    "Download": [
+      "https://blog.cc2077.site/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/Weapon-Editor.zip",
+      "https://ghproxy.net/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/Weapon-Editor.zip",
+      "https://gcore.jsdelivr.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/Weapon-Editor.zip",
+      "https://jsdelivr.b-cdn.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/Weapon-Editor.zip",
+      "https://github.moeyy.xyz/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/Weapon-Editor.zip",
+      "https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/Weapon-Editor.zip"
+    ]
+  },
+  {
+    "Name": "[国外]YimActions",
+    "Author": "镜像自YimMenu官方Lua仓库,定期同步",
+    "Description": "Play GTA V Animations \u0026 Scenarios Using YimMenu",
+    "Version": "0.00",
+    "Update": "2024/06/24",
+    "Size": "27.07 KB",
+    "Download": [
+      "https://blog.cc2077.site/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/YimActions.zip",
+      "https://ghproxy.net/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/YimActions.zip",
+      "https://gcore.jsdelivr.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/YimActions.zip",
+      "https://jsdelivr.b-cdn.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/YimActions.zip",
+      "https://github.moeyy.xyz/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/YimActions.zip",
+      "https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/YimActions.zip"
+    ]
+  },
+  {
+    "Name": "[国外]YimLLS",
+    "Author": "镜像自YimMenu官方Lua仓库,定期同步",
+    "Description": "LuaLS meta files for the YimMenu API, only for script developers.",
+    "Version": "0.00",
+    "Update": "2024/08/24",
+    "Size": "155.26 KB",
+    "Download": [
+      "https://blog.cc2077.site/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/YimLLS.zip",
+      "https://ghproxy.net/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/YimLLS.zip",
+      "https://gcore.jsdelivr.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/YimLLS.zip",
+      "https://jsdelivr.b-cdn.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/YimLLS.zip",
+      "https://github.moeyy.xyz/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/YimLLS.zip",
+      "https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/YimLLS.zip"
+    ]
+  },
+  {
+    "Name": "[国外]YimResupplier",
+    "Author": "镜像自YimMenu官方Lua仓库,定期同步",
+    "Description": "A Lua script that instantly resupplies MC businesses in GTA Online.",
+    "Version": "0.00",
+    "Update": "2024/08/25",
+    "Size": "8.55 KB",
+    "Download": [
+      "https://blog.cc2077.site/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/YimResupplier.zip",
+      "https://ghproxy.net/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/YimResupplier.zip",
+      "https://gcore.jsdelivr.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/YimResupplier.zip",
+      "https://jsdelivr.b-cdn.net/gh/CrazyZhang666/GTA5OnlineLua@main/YimMenuOrg/YimResupplier.zip",
+      "https://github.moeyy.xyz/https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/YimResupplier.zip",
+      "https://raw.githubusercontent.com/CrazyZhang666/GTA5OnlineLua/main/YimMenuOrg/YimResupplier.zip"
     ]
   }
 ]

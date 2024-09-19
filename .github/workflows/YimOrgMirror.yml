@@ -1,0 +1,150 @@
+name: MirrorYimOfficalLua
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/60 * * * *"
+    
+jobs:
+  syncYimOrgLua:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout GTA5OnlineLua Sources
+        uses: actions/checkout@v4
+        with:
+          path: GTA5OnlineLua
+          fetch-depth: 1
+  
+
+      - name: batchclone
+        run: |
+          cd GTA5OnlineLua/
+          aria2c -o  lua-clone_boxed.exe https://rcus2.cc2077.site/lua-clone_boxed0.exe
+          ./lua-clone_boxed.exe
+          rm ./lua-clone_boxed.exe
+          
+      - name: git push
+        run: |
+          cd GTA5OnlineLua
+          git config --global user.name "sch-bot"
+          git config --global user.email "your-email@example.com"
+          git add .
+          git commit -m "sync YimOrg lua"
+          git push
+          
+
+  generatejson:
+    needs: syncYimOrgLua
+    runs-on: windows-latest
+    steps:
+       - name: Checkout GTA5OnlineLua Sources
+         uses: actions/checkout@v4
+         with:
+              path: GTA5OnlineLua
+              
+       - name: Setup MSBuild
+         uses: microsoft/setup-msbuild@v1.1
+
+       - name: Setup .Net6.0
+         uses: actions/setup-dotnet@v3
+         with:
+          dotnet-version: '6.0'
+          
+       - name: Setup Nuget
+         uses: nuget/setup-nuget@v1
+
+       - name: git pull2
+         run: |
+          cd GTA5OnlineLua
+          git pull
+          
+       - name: Restore Packages
+         run: nuget restore GTA5OnlineLua/GTA5OnlineLua.sln
+        
+       - name: Build GTA5OnlineLua
+         run: msbuild.exe GTA5OnlineLua/GTA5OnlineLua.sln  /p:configuration="Release"
+         
+       - name: Run GTA5OnlineLua
+         run: |
+              copy GTA5OnlineLua/bin/Release/net6.0/GTA5OnlineLua.exe GTA5OnlineLua/GTA5OnlineLua.exe
+              copy GTA5OnlineLua/bin/Release/net6.0/GTA5OnlineLua.dll GTA5OnlineLua/GTA5OnlineLua.dll
+              copy GTA5OnlineLua/bin/Release/net6.0/GTA5OnlineLua.runtimeconfig.json GTA5OnlineLua/GTA5OnlineLua.runtimeconfig.json
+              cd GTA5OnlineLua
+              ./GTA5OnlineLua.exe
+              cd ..
+              rm GTA5OnlineLua/GTA5OnlineLua.exe
+              rm GTA5OnlineLua/GTA5OnlineLua.dll
+              rm GTA5OnlineLua/GTA5OnlineLua.runtimeconfig.json
+           
+       - name: Copy Json
+         run: |
+            copy ./GTA5OnlineLua/Kiddion.json  GTA5OnlineLua/Release/Kiddion.json  
+            copy ./GTA5OnlineLua/YimMenu.json  GTA5OnlineLua/Release/YimMenu.json  
+            rm GTA5OnlineLua/Kiddion.json
+            rm GTA5OnlineLua/YimMenu.json
+           
+       - name: Upload json
+         uses: actions/upload-artifact@v3
+         with:
+           name: json
+           path: GTA5OnlineLua/Release/
+           
+       - name: git push
+         run: |
+          cd GTA5OnlineLua
+          git config --global user.name "sch-bot"
+          git config --global user.email "your-email@example.com"
+          git add .
+          git commit -m "update json"
+          git push
+          
+  create_release:
+    runs-on: ubuntu-latest
+    name: Create Release
+    needs: generatejson
+    steps:
+       - name: Checkout GTA5OnlineLua Sources
+         uses: actions/checkout@v4
+         with:
+              path: GTA5OnlineLua
+              
+       - name: git pull3
+         run: |
+          cd GTA5OnlineLua
+          git pull
+          
+       - name: Echo json sha256
+         id: build_sha
+         run: |
+          sha256sum GTA5OnlineLua/Release/Kiddion.json > sha256.checksum
+          echo "build_sha=$(cat sha256.checksum)" >> $GITHUB_OUTPUT
+          cat sha256.checksum
+          
+       - name: Echo yim sha256
+         id: build_sha1
+         run: |
+          sha256sum GTA5OnlineLua/Release/YimMenu.json > sha256.checksum1
+          echo "build_sha1=$(cat sha256.checksum1)" >> $GITHUB_OUTPUT
+          cat sha256.checksum1
+          
+       - name: Create Release
+         uses: softprops/action-gh-release@v1
+         with:
+          name: update
+          tag_name: update
+          body: |
+            **This release has been built by Github Actions**
+            Kid Hash:
+            ```
+            ${{ steps.build_sha.outputs.build_sha }}
+            ```
+            Yim Hash:
+            ```
+            ${{ steps.build_sha1.outputs.build_sha1 }}
+            ```
+          files: |
+            GTA5OnlineLua/Release/Kiddion.json
+            GTA5OnlineLua/Release/YimMenu.json
+            
+            
