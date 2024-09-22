@@ -228,8 +228,8 @@
     "Author": "镜像自YimMenu官方Lua仓库,定期同步",
     "Description": "A lua script that allows you to view daily collectibles\u0027 locations, teleport, and more stuff.",
     "Version": "0.00",
-    "Update": "2024/09/08",
-    "Size": "7.87 KB",
+    "Update": "2024/09/22",
+    "Size": "7.88 KB",
     "Download": [
       "https://blog.cc2077.site/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/DailyCollectibles.zip",
       "https://ghproxy.net/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/DailyCollectibles.zip",
@@ -693,7 +693,7 @@
     "Description": "A Lua script that instantly resupplies MC businesses in GTA Online.",
     "Version": "0.00",
     "Update": "2024/09/20",
-    "Size": "8.55 KB",
+    "Size": "8.51 KB",
     "Download": [
       "https://blog.cc2077.site/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/YimResupplier.zip",
       "https://ghproxy.net/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/YimResupplier.zip",
