@@ -708,8 +708,8 @@
     "Author": "镜像自YimMenu官方Lua仓库,定期同步",
     "Description": "LuaLS meta files for the YimMenu API, only for script developers.",
     "Version": "0.00",
-    "Update": "2024/08/24",
-    "Size": "155.26 KB",
+    "Update": "2024/11/03",
+    "Size": "160.43 KB",
     "Download": [
       "https://blog.cc2077.site/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/YimLLS.zip",
       "https://ghproxy.net/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/YimLLS.zip",
