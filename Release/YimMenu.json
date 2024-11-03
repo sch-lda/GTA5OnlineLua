@@ -500,8 +500,8 @@
     "Author": "镜像自YimMenu官方Lua仓库,定期同步",
     "Description": "A Lua script for YimMenu about Random Events.",
     "Version": "0.00",
-    "Update": "2024/10/26",
-    "Size": "8.56 KB",
+    "Update": "2024/11/03",
+    "Size": "8.52 KB",
     "Download": [
       "https://blog.cc2077.site/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/RandomEvents.zip",
       "https://ghproxy.net/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/RandomEvents.zip",
@@ -677,7 +677,7 @@
     "Description": "Play GTA V Animations \u0026 Scenarios Using YimMenu",
     "Version": "0.00",
     "Update": "2024/11/01",
-    "Size": "61.36 KB",
+    "Size": "62.06 KB",
     "Download": [
       "https://blog.cc2077.site/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/YimActions.zip",
       "https://ghproxy.net/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/YimActions.zip",
