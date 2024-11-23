@@ -416,6 +416,22 @@
     ]
   },
   {
+    "Name": "[国外]PatrickMcReary",
+    "Author": "镜像自YimMenu官方Lua仓库,定期同步",
+    "Description": "A Lua script for the Patrick McReary random event.",
+    "Version": "0.00",
+    "Update": "2024/11/23",
+    "Size": "0.54 KB",
+    "Download": [
+      "https://blog.cc2077.site/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/PatrickMcReary.zip",
+      "https://ghproxy.net/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/PatrickMcReary.zip",
+      "https://gcore.jsdelivr.net/gh/sch-lda/GTA5OnlineLua@main/YimMenuOrg/PatrickMcReary.zip",
+      "https://jsdelivr.b-cdn.net/gh/sch-lda/GTA5OnlineLua@main/YimMenuOrg/PatrickMcReary.zip",
+      "https://github.moeyy.xyz/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/PatrickMcReary.zip",
+      "https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/PatrickMcReary.zip"
+    ]
+  },
+  {
     "Name": "[国外]PayphoneHits",
     "Author": "镜像自YimMenu官方Lua仓库,定期同步",
     "Description": "A Lua script for Payphone Hits.",
