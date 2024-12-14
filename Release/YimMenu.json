@@ -180,7 +180,7 @@
     "Author": "镜像自YimMenu官方Lua仓库,定期同步",
     "Description": "Enables cheat codes in GTA Online.",
     "Version": "0.00",
-    "Update": "2024/11/03",
+    "Update": "2024/12/14",
     "Size": "0.64 KB",
     "Download": [
       "https://blog.cc2077.site/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/CheatCodes.zip",
@@ -276,8 +276,8 @@
     "Author": "镜像自YimMenu官方Lua仓库,定期同步",
     "Description": "Allows you to trigger transactions via the freemode script. Experimental only, use at your own risk.",
     "Version": "0.00",
-    "Update": "2024/08/06",
-    "Size": "2.94 KB",
+    "Update": "2024/12/14",
+    "Size": "3.04 KB",
     "Download": [
       "https://blog.cc2077.site/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/FMTransactionTriggerer.zip",
       "https://ghproxy.net/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/FMTransactionTriggerer.zip",
@@ -420,7 +420,7 @@
     "Author": "镜像自YimMenu官方Lua仓库,定期同步",
     "Description": "A Lua script for the Patrick McReary random event.",
     "Version": "0.00",
-    "Update": "2024/11/23",
+    "Update": "2024/12/14",
     "Size": "0.54 KB",
     "Download": [
       "https://blog.cc2077.site/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/PatrickMcReary.zip",
