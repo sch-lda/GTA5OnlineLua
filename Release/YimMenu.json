@@ -228,8 +228,8 @@
     "Author": "镜像自YimMenu官方Lua仓库,定期同步",
     "Description": "A lua script that allows you to view daily collectibles\u0027 locations, teleport, and more stuff.",
     "Version": "0.00",
-    "Update": "2024/10/17",
-    "Size": "7.89 KB",
+    "Update": "2024/12/14",
+    "Size": "8.00 KB",
     "Download": [
       "https://blog.cc2077.site/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/DailyCollectibles.zip",
       "https://ghproxy.net/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/DailyCollectibles.zip",
@@ -692,7 +692,7 @@
     "Author": "镜像自YimMenu官方Lua仓库,定期同步",
     "Description": "Allows you to claim the vehicle you are in as your personal vehicle.",
     "Version": "0.00",
-    "Update": "2024/12/04",
+    "Update": "2024/12/14",
     "Size": "1.19 KB",
     "Download": [
       "https://blog.cc2077.site/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/VehicleReward.zip",
