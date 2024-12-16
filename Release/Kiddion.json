@@ -1,21 +1,5 @@
 [
   {
-    "Name": "Alice Lua",
-    "Author": "Alice",
-    "Description": "由Alice大佬开发的Kiddion专用Lua脚本，相当于Kiddion增强版DLC，推荐使用",
-    "Version": "2.52",
-    "Update": "2024/09/23",
-    "Size": "3.03 MB",
-    "Download": [
-      "https://blog.cc2077.site/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/Kiddion/AliceLua.zip",
-      "https://ghproxy.net/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/Kiddion/AliceLua.zip",
-      "https://gcore.jsdelivr.net/gh/sch-lda/GTA5OnlineLua@main/Kiddion/AliceLua.zip",
-      "https://jsdelivr.b-cdn.net/gh/sch-lda/GTA5OnlineLua@main/Kiddion/AliceLua.zip",
-      "https://github.moeyy.xyz/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/Kiddion/AliceLua.zip",
-      "https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/Kiddion/AliceLua.zip"
-    ]
-  },
-  {
     "Name": "Easy Lua",
     "Author": "CrazyZhang",
     "Description": "对Kiddion现有功能进行补充，包含一些简单实用功能",
