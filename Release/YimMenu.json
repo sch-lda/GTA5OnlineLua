@@ -116,7 +116,7 @@
     "Author": "镜像自YimMenu官方Lua仓库,定期同步",
     "Description": "Allows you to manipulate Arcade games.",
     "Version": "0.00",
-    "Update": "2024/09/02",
+    "Update": "2024/12/16",
     "Size": "2.01 KB",
     "Download": [
       "https://blog.cc2077.site/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/ArcadeGames.zip",
@@ -244,8 +244,8 @@
     "Author": "镜像自YimMenu官方Lua仓库,定期同步",
     "Description": "Allows you to track your Elite Challenge progresses.",
     "Version": "0.00",
-    "Update": "2024/07/09",
-    "Size": "3.01 KB",
+    "Update": "2024/12/16",
+    "Size": "3.02 KB",
     "Download": [
       "https://blog.cc2077.site/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/EliteTracker.zip",
       "https://ghproxy.net/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/EliteTracker.zip",
@@ -516,8 +516,8 @@
     "Author": "镜像自YimMenu官方Lua仓库,定期同步",
     "Description": "A Lua script for YimMenu about Random Events.",
     "Version": "0.00",
-    "Update": "2024/12/15",
-    "Size": "8.79 KB",
+    "Update": "2024/12/16",
+    "Size": "8.78 KB",
     "Download": [
       "https://blog.cc2077.site/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/RandomEvents.zip",
       "https://ghproxy.net/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/RandomEvents.zip",
@@ -532,7 +532,7 @@
     "Author": "镜像自YimMenu官方Lua仓库,定期同步",
     "Description": "Allows you to edit your character rank, LSCM REP Tier, and Arena War Sponsorship Tier.",
     "Version": "0.00",
-    "Update": "2024/11/27",
+    "Update": "2024/12/16",
     "Size": "1.34 KB",
     "Download": [
       "https://blog.cc2077.site/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/RankEditor.zip",
@@ -628,7 +628,7 @@
     "Author": "镜像自YimMenu官方Lua仓库,定期同步",
     "Description": "A proper script for the Halloween Sightseeing event.",
     "Version": "0.00",
-    "Update": "2024/07/09",
+    "Update": "2024/12/16",
     "Size": "2.44 KB",
     "Download": [
       "https://blog.cc2077.site/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/Sightseeing.zip",
