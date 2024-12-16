@@ -71,48 +71,6 @@ jobs:
           cd SchLua
           git pull
           
-      - name: Download Alicelua kiddion zip
-        run: |
-           mkdir AlicetmpKiddion
-           cd AlicetmpKiddion
-           aria2c -o  AliceLua.zip https://rcus2.cc2077.site/Lua/Alice-lua.zip
-           
-      - name: Calculate SHA256 hash for oldAliceKid
-        run: echo "SHA256_AKO=$(sha256sum GTA5OnlineLua/Kiddion/AliceLua.zip | cut -d' ' -f1)" >> $GITHUB_ENV
-
-      - name: Calculate SHA256 hash for newAliceKid
-        run: echo "SHA256_AKN=$(sha256sum AlicetmpKiddion/AliceLua.zip | cut -d' ' -f1)" >> $GITHUB_ENV
-
-      - name: Upd Alice Kiddion ?
-        run: |
-         if [ "$SHA256_AKO" != "$SHA256_AKN" ]; then
-           cd GTA5OnlineLua/
-           echo "Alice for Kiddion" > trigger.txt
-         else
-           echo "Alice Kiddion无更改"
-         fi
-         
-      - name: Download Alicelua Yimmenu zip
-        run: |
-           mkdir AlicetmpYimmenu
-           cd AlicetmpYimmenu
-           aria2c -o  AliceLua.zip https://rcus2.cc2077.site/Lua/Alice2333_for_yimmenu.zip
-           
-      - name: Calculate SHA256 hash for oldAliceYim
-        run: echo "SHA256_AYO=$(sha256sum GTA5OnlineLua/YimMenu/AliceLua.zip | cut -d' ' -f1)" >> $GITHUB_ENV
-
-      - name: Calculate SHA256 hash for newAliceYim
-        run: echo "SHA256_AYN=$(sha256sum AlicetmpYimmenu/AliceLua.zip | cut -d' ' -f1)" >> $GITHUB_ENV
-
-      - name: Upd Alice YimMenu ?
-        run: |  
-         if [ "$SHA256_AYO" != "$SHA256_AYN" ]; then
-            cd GTA5OnlineLua/
-            echo "Alice for YimMenu" > trigger.txt
-         else
-           echo "Alice YimMenu无更改"
-         fi 
-
       - name: Create tmpdir
         run: mkdir tmpdir
                                   

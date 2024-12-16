@@ -11,12 +11,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <None Update="Kiddion\AliceLua.ini">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </None>
-      <None Update="Kiddion\AliceLua.zip">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </None>
       <None Update="Kiddion\EasyLua.ini">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
@@ -27,12 +21,6 @@
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
       <None Update="Kiddion\IdealLua.zip">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </None>
-      <None Update="YimMenu\AliceLua.ini">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </None>
-      <None Update="YimMenu\AliceLua.zip">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
       <None Update="YimMenu\ExtrasAddon.ini">
