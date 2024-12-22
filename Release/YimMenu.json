@@ -19,9 +19,9 @@
     "Name": "RScript",
     "Author": "Rostal",
     "Description": "载具、NPC实体管理控制，任务助手，和其它若干功能",
-    "Version": "3.04",
-    "Update": "2024/09/15",
-    "Size": "129.92 KB",
+    "Version": "3.05",
+    "Update": "2024/12/22",
+    "Size": "130.04 KB",
     "Download": [
       "https://blog.cc2077.site/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenu/RScript.zip",
       "https://ghproxy.net/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenu/RScript.zip",
@@ -36,8 +36,8 @@
     "Author": "Rostal",
     "Description": "单人启动任务，直接完成任务，无需前置直接启动抢劫终章差事",
     "Version": "3.01",
-    "Update": "2024/09/23",
-    "Size": "20.28 KB",
+    "Update": "2024/12/22",
+    "Size": "21.51 KB",
     "Download": [
       "https://blog.cc2077.site/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenu/RS_Missions.zip",
       "https://ghproxy.net/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenu/RS_Missions.zip",
