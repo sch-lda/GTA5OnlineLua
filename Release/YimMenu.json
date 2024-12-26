@@ -656,6 +656,22 @@
     ]
   },
   {
+    "Name": "[国外]SoloMissions",
+    "Author": "镜像自YimMenu官方Lua仓库,定期同步",
+    "Description": "Allows you to play the heists and missions alone.",
+    "Version": "0.00",
+    "Update": "2024/12/26",
+    "Size": "1.15 KB",
+    "Download": [
+      "https://blog.cc2077.site/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/SoloMissions.zip",
+      "https://ghproxy.net/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/SoloMissions.zip",
+      "https://gcore.jsdelivr.net/gh/sch-lda/GTA5OnlineLua@main/YimMenuOrg/SoloMissions.zip",
+      "https://jsdelivr.b-cdn.net/gh/sch-lda/GTA5OnlineLua@main/YimMenuOrg/SoloMissions.zip",
+      "https://github.moeyy.xyz/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/SoloMissions.zip",
+      "https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/SoloMissions.zip"
+    ]
+  },
+  {
     "Name": "[国外]TokyoDrift",
     "Author": "镜像自YimMenu官方Lua仓库,定期同步",
     "Description": "Adds a few fun features for car enthusiasts.",
