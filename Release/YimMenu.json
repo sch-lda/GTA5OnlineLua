@@ -496,6 +496,22 @@
     ]
   },
   {
+    "Name": "[国外]PlayerAbilities",
+    "Author": "镜像自YimMenu官方Lua仓库,定期同步",
+    "Description": "Manipulates your online character abilities.",
+    "Version": "0.00",
+    "Update": "2025/01/07",
+    "Size": "1.04 KB",
+    "Download": [
+      "https://blog.cc2077.site/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/PlayerAbilities.zip",
+      "https://ghproxy.net/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/PlayerAbilities.zip",
+      "https://gcore.jsdelivr.net/gh/sch-lda/GTA5OnlineLua@main/YimMenuOrg/PlayerAbilities.zip",
+      "https://jsdelivr.b-cdn.net/gh/sch-lda/GTA5OnlineLua@main/YimMenuOrg/PlayerAbilities.zip",
+      "https://github.moeyy.xyz/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/PlayerAbilities.zip",
+      "https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/PlayerAbilities.zip"
+    ]
+  },
+  {
     "Name": "[国外]PrizeVehicles",
     "Author": "镜像自YimMenu官方Lua仓库,定期同步",
     "Description": "Allows you to edit prize vehicles such as Podium, LSCM, etc.",
