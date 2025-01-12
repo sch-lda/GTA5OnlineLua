@@ -720,6 +720,22 @@
     ]
   },
   {
+    "Name": "[国外]Uthensia_1.70",
+    "Author": "镜像自YimMenu官方Lua仓库,定期同步",
+    "Description": "a menu which lets us to get money, edit our ranks, max out our character stats, and edit our k/ds.",
+    "Version": "0.00",
+    "Update": "2025/01/12",
+    "Size": "76.61 KB",
+    "Download": [
+      "https://blog.cc2077.site/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/Uthensia_1.70.zip",
+      "https://ghproxy.net/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/Uthensia_1.70.zip",
+      "https://gcore.jsdelivr.net/gh/sch-lda/GTA5OnlineLua@main/YimMenuOrg/Uthensia_1.70.zip",
+      "https://jsdelivr.b-cdn.net/gh/sch-lda/GTA5OnlineLua@main/YimMenuOrg/Uthensia_1.70.zip",
+      "https://github.moeyy.xyz/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/Uthensia_1.70.zip",
+      "https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/Uthensia_1.70.zip"
+    ]
+  },
+  {
     "Name": "[国外]VehicleReward",
     "Author": "镜像自YimMenu官方Lua仓库,定期同步",
     "Description": "Allows you to claim the vehicle you are in as your personal vehicle.",
