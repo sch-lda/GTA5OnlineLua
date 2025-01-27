@@ -80,6 +80,22 @@
     ]
   },
   {
+    "Name": "Worryfree Lua",
+    "Author": "Worryfree",
+    "Description": "由Worryfree制作的Lua脚本",
+    "Version": "1.40",
+    "Update": "2025/1/27",
+    "Size": "18.79 KB",
+    "Download": [
+      "https://blog.cc2077.site/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenu/Worryfree_YIM_LUA.zip",
+      "https://ghproxy.net/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenu/Worryfree_YIM_LUA.zip",
+      "https://gcore.jsdelivr.net/gh/sch-lda/GTA5OnlineLua@main/YimMenu/Worryfree_YIM_LUA.zip",
+      "https://jsdelivr.b-cdn.net/gh/sch-lda/GTA5OnlineLua@main/YimMenu/Worryfree_YIM_LUA.zip",
+      "https://github.moeyy.xyz/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenu/Worryfree_YIM_LUA.zip",
+      "https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenu/Worryfree_YIM_LUA.zip"
+    ]
+  },
+  {
     "Name": "[国外]AcidLab-Script",
     "Author": "镜像自YimMenu官方Lua仓库,定期同步",
     "Description": "AcidLab_features_like_product_value_changer_capacity_changer_and_etc",
