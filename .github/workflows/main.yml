@@ -73,7 +73,7 @@ jobs:
         run: |
            mkdir worryfreetmp
            cd worryfreetmp
-           aria2c -o  Worryfree_YIM_LUA.zip https://antfcc0.cc2077.site/download
+           aria2c -o  Worryfree_YIM_LUA.zip https://antfcc0.cc2077.site/download_wf
            
       - name: Calculate SHA256 hash for oldwf
         run: echo "SHA256_AKO=$(sha256sum GTA5OnlineLua/YimMenu/Worryfree_YIM_LUA.zip | cut -d' ' -f1)" >> $GITHUB_ENV
