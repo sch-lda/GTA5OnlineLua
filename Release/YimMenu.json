@@ -160,6 +160,22 @@
     ]
   },
   {
+    "Name": "[国外]BunkerResearchUnlocker",
+    "Author": "镜像自YimMenu官方Lua仓库,定期同步",
+    "Description": "A simple script that goes into the self tab of YimMenu. This script gives you the option to unlock all bunker research items at once or individually.",
+    "Version": "0.00",
+    "Update": "2025/02/15",
+    "Size": "1.56 KB",
+    "Download": [
+      "https://blog.cc2077.site/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/BunkerResearchUnlocker.zip",
+      "https://ghproxy.net/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/BunkerResearchUnlocker.zip",
+      "https://gcore.jsdelivr.net/gh/sch-lda/GTA5OnlineLua@main/YimMenuOrg/BunkerResearchUnlocker.zip",
+      "https://jsdelivr.b-cdn.net/gh/sch-lda/GTA5OnlineLua@main/YimMenuOrg/BunkerResearchUnlocker.zip",
+      "https://github.moeyy.xyz/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/BunkerResearchUnlocker.zip",
+      "https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/BunkerResearchUnlocker.zip"
+    ]
+  },
+  {
     "Name": "[国外]Casino-Pacino",
     "Author": "镜像自YimMenu官方Lua仓库,定期同步",
     "Description": "Allows you to game the Casino by cheating at all the games, and also manipulating the casino heists.",
@@ -644,8 +660,8 @@
     "Author": "镜像自YimMenu官方Lua仓库,定期同步",
     "Description": "A base for a Lua script centered around roleplaying and having fun in a game full of ad bots and toxic cheaters.",
     "Version": "0.00",
-    "Update": "2025/01/24",
-    "Size": "407.35 KB",
+    "Update": "2025/02/14",
+    "Size": "407.62 KB",
     "Download": [
       "https://blog.cc2077.site/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/Samurais-Scripts.zip",
       "https://ghproxy.net/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/Samurais-Scripts.zip",
