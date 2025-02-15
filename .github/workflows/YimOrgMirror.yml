@@ -85,7 +85,7 @@ jobs:
             rm GTA5OnlineLua/YimMenu.json
            
        - name: Upload json
-         uses: actions/upload-artifact@v3
+         uses: actions/upload-artifact@v4
          with:
            name: json
            path: GTA5OnlineLua/Release/
