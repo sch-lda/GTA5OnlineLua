@@ -784,6 +784,22 @@
     ]
   },
   {
+    "Name": "[国外]Wardrobe",
+    "Author": "镜像自YimMenu官方Lua仓库,定期同步",
+    "Description": "Allows you to access your wardrobe remotely.",
+    "Version": "0.00",
+    "Update": "2025/02/23",
+    "Size": "1.17 KB",
+    "Download": [
+      "https://blog.cc2077.site/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/Wardrobe.zip",
+      "https://ghproxy.net/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/Wardrobe.zip",
+      "https://gcore.jsdelivr.net/gh/sch-lda/GTA5OnlineLua@main/YimMenuOrg/Wardrobe.zip",
+      "https://jsdelivr.b-cdn.net/gh/sch-lda/GTA5OnlineLua@main/YimMenuOrg/Wardrobe.zip",
+      "https://github.moeyy.xyz/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/Wardrobe.zip",
+      "https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/Wardrobe.zip"
+    ]
+  },
+  {
     "Name": "[国外]Weapon-Editor",
     "Author": "镜像自YimMenu官方Lua仓库,定期同步",
     "Description": "WeaponEditor is a lua script that lets you mod weapons.meta externally while the game is running. You can mod weapon behaviour, add attachments etc. without actually changing the game files.",
