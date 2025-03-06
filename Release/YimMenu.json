@@ -416,6 +416,22 @@
     ]
   },
   {
+    "Name": "[国外]KaifKolMenu",
+    "Author": "镜像自YimMenu官方Lua仓库,定期同步",
+    "Description": "This is a small menu for online version 1.69 ",
+    "Version": "0.00",
+    "Update": "2025/03/06",
+    "Size": "1.63 KB",
+    "Download": [
+      "https://blog.cc2077.site/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/KaifKolMenu.zip",
+      "https://ghproxy.net/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/KaifKolMenu.zip",
+      "https://gcore.jsdelivr.net/gh/sch-lda/GTA5OnlineLua@main/YimMenuOrg/KaifKolMenu.zip",
+      "https://jsdelivr.b-cdn.net/gh/sch-lda/GTA5OnlineLua@main/YimMenuOrg/KaifKolMenu.zip",
+      "https://github.moeyy.xyz/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/KaifKolMenu.zip",
+      "https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/KaifKolMenu.zip"
+    ]
+  },
+  {
     "Name": "[国外]MiniGameHack",
     "Author": "镜像自YimMenu官方Lua仓库,定期同步",
     "Description": "Minigame instant complete, skip hacking process",
