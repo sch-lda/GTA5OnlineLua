@@ -448,6 +448,22 @@
     ]
   },
   {
+    "Name": "[国外]NoHesi",
+    "Author": "镜像自YimMenu官方Lua仓库,定期同步",
+    "Description": "A simple and barebones implementation of NoHesi into YimMenu-Lua: Earn points by cutting up traffic at high speed.",
+    "Version": "0.00",
+    "Update": "2025/03/12",
+    "Size": "8.44 KB",
+    "Download": [
+      "https://blog.cc2077.site/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/NoHesi.zip",
+      "https://ghproxy.net/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/NoHesi.zip",
+      "https://gcore.jsdelivr.net/gh/sch-lda/GTA5OnlineLua@main/YimMenuOrg/NoHesi.zip",
+      "https://jsdelivr.b-cdn.net/gh/sch-lda/GTA5OnlineLua@main/YimMenuOrg/NoHesi.zip",
+      "https://github.moeyy.xyz/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/NoHesi.zip",
+      "https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/NoHesi.zip"
+    ]
+  },
+  {
     "Name": "[国外]PatrickMcReary",
     "Author": "镜像自YimMenu官方Lua仓库,定期同步",
     "Description": "A Lua script for the Patrick McReary random event.",
