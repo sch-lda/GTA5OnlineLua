@@ -910,5 +910,21 @@
       "https://github.moeyy.xyz/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/YimResupplier.zip",
       "https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/YimResupplier.zip"
     ]
+  },
+  {
+    "Name": "[国外]YimToast",
+    "Author": "镜像自YimMenu官方Lua仓库,定期同步",
+    "Description": "Lightweight GUI notification system for Lua developers.",
+    "Version": "0.00",
+    "Update": "2025/03/16",
+    "Size": "2.36 KB",
+    "Download": [
+      "https://blog.cc2077.site/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/YimToast.zip",
+      "https://ghproxy.net/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/YimToast.zip",
+      "https://gcore.jsdelivr.net/gh/sch-lda/GTA5OnlineLua@main/YimMenuOrg/YimToast.zip",
+      "https://jsdelivr.b-cdn.net/gh/sch-lda/GTA5OnlineLua@main/YimMenuOrg/YimToast.zip",
+      "https://github.moeyy.xyz/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/YimToast.zip",
+      "https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/YimToast.zip"
+    ]
   }
 ]
