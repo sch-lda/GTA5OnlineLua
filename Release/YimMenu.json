@@ -916,8 +916,8 @@
     "Author": "镜像自YimMenu官方Lua仓库,定期同步",
     "Description": "Lightweight GUI notification system for Lua developers.",
     "Version": "0.00",
-    "Update": "2025/03/17",
-    "Size": "2.36 KB",
+    "Update": "2025/03/25",
+    "Size": "2.38 KB",
     "Download": [
       "https://blog.cc2077.site/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/YimToast.zip",
       "https://ghproxy.net/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/YimToast.zip",
