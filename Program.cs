@@ -104,7 +104,7 @@ internal class Program
     {
         var downloads = new List<string>
         {
-            $"https://blog.schplus.site/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/{link}",
+            $"https://blog.1007890.xyz/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/{link}",
             $"https://ghproxy.net/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/{link}",
             $"https://gcore.jsdelivr.net/gh/sch-lda/GTA5OnlineLua@main/{link}",
             $"https://jsdelivr.b-cdn.net/gh/sch-lda/GTA5OnlineLua@main/{link}",
