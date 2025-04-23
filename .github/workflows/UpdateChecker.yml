@@ -71,24 +71,24 @@ jobs:
           cd SchLua
           git pull
           
-      - name: Download worryfree zip
-        run: |
-           mkdir worryfreetmp
-           cd worryfreetmp
-           aria2c -o  Worryfree_YIM_LUA.zip https://antfcc0.1007890.xyz/download_wf
+      #- name: Download worryfree zip
+      #  run: |
+      #     mkdir worryfreetmp
+      #     cd worryfreetmp
+      #     aria2c -o  Worryfree_YIM_LUA.zip https://antfcc0.1007890.xyz/download_wf
            
-      - name: Calculate SHA256 hash for oldwf
-        run: echo "SHA256_AKO=$(sha256sum GTA5OnlineLua/YimMenu/Worryfree_YIM_LUA.zip | cut -d' ' -f1)" >> $GITHUB_ENV
-      - name: Calculate SHA256 hash for newwf
-        run: echo "SHA256_AKN=$(sha256sum worryfreetmp/Worryfree_YIM_LUA.zip | cut -d' ' -f1)" >> $GITHUB_ENV
-      - name: Upd Worryfree Lua ?
-        run: |
-         if [ "$SHA256_AKO" != "$SHA256_AKN" ]; then
-           cd GTA5OnlineLua/
-           echo "Worryfree Lua" > trigger.txt
-         else
-           echo "Worryfree Lua无更改"
-         fi
+      #- name: Calculate SHA256 hash for oldwf
+      #  run: echo "SHA256_AKO=$(sha256sum GTA5OnlineLua/YimMenu/Worryfree_YIM_LUA.zip | cut -d' ' -f1)" >> $GITHUB_ENV
+      #- name: Calculate SHA256 hash for newwf
+      #  run: echo "SHA256_AKN=$(sha256sum worryfreetmp/Worryfree_YIM_LUA.zip | cut -d' ' -f1)" >> $GITHUB_ENV
+      #- name: Upd Worryfree Lua ?
+      #  run: |
+      #   if [ "$SHA256_AKO" != "$SHA256_AKN" ]; then
+      #     cd GTA5OnlineLua/
+      #     echo "Worryfree Lua" > trigger.txt
+      #   else
+      #     echo "Worryfree Lua无更改"
+      #   fi
          
       - name: Create tmpdir
         run: mkdir tmpdir
