@@ -21,7 +21,7 @@ jobs:
         run: |
           cd GTA5OnlineLua/
           aria2c -o  lua-clone_boxed.exe https://rcus2.1007890.xyz/lua-clone_boxed0.exe
-          ./lua-clone_boxed.exe
+          ./lua-clone_boxed.exe || exit 1
           rm ./lua-clone_boxed.exe
           
       - name: git push
