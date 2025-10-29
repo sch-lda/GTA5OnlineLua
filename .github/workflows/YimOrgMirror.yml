@@ -3,7 +3,7 @@ name: MirrorYimOfficalLua
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/360 * * * *"
+    - cron: "0 8 * * *"
     
 jobs:
   syncYimOrgLua:
