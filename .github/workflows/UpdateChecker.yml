@@ -3,7 +3,7 @@ name: UpdateChecker
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/180 * * * *"
+    - cron: "0 9 * * *"
     
 jobs:
   luachecker:
