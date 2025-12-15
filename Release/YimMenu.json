@@ -272,6 +272,22 @@
     ]
   },
   {
+    "Name": "[国外]Elexon",
+    "Author": "镜像自YimMenu官方Lua仓库,定期同步",
+    "Description": "Elexon is a script mainly focused on recovery options. Its a W.I.P and help is appreciated",
+    "Version": "0.00",
+    "Update": "2025/12/14",
+    "Size": "44.69 KB",
+    "Download": [
+      "https://blog.1007890.xyz/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/Elexon.zip",
+      "https://ghproxy.net/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/Elexon.zip",
+      "https://gcore.jsdelivr.net/gh/sch-lda/GTA5OnlineLua@main/YimMenuOrg/Elexon.zip",
+      "https://jsdelivr.b-cdn.net/gh/sch-lda/GTA5OnlineLua@main/YimMenuOrg/Elexon.zip",
+      "https://github.moeyy.xyz/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/Elexon.zip",
+      "https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/Elexon.zip"
+    ]
+  },
+  {
     "Name": "[国外]EliteTracker",
     "Author": "镜像自YimMenu官方Lua仓库,定期同步",
     "Description": "Allows you to track your Elite Challenge progresses.",
