@@ -464,6 +464,22 @@
     ]
   },
   {
+    "Name": "[国外]MissionTools",
+    "Author": "镜像自YimMenu官方Lua仓库,定期同步",
+    "Description": "A versatile YimMenu script featuring mission selectors, skip tools, cooldown management, session switching, and much more.",
+    "Version": "0.00",
+    "Update": "2026/07/31",
+    "Size": "4.83 KB",
+    "Download": [
+      "https://blog.1007890.xyz/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/MissionTools.zip",
+      "https://ghproxy.net/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/MissionTools.zip",
+      "https://gcore.jsdelivr.net/gh/sch-lda/GTA5OnlineLua@main/YimMenuOrg/MissionTools.zip",
+      "https://jsdelivr.b-cdn.net/gh/sch-lda/GTA5OnlineLua@main/YimMenuOrg/MissionTools.zip",
+      "https://github.moeyy.xyz/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/MissionTools.zip",
+      "https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/MissionTools.zip"
+    ]
+  },
+  {
     "Name": "[国外]NoHesi",
     "Author": "镜像自YimMenu官方Lua仓库,定期同步",
     "Description": "A simple and barebones implementation of NoHesi into YimMenu-Lua: Earn points by cutting up traffic at high speed.",
@@ -708,7 +724,7 @@
     "Author": "镜像自YimMenu官方Lua仓库,定期同步",
     "Description": "A base for a Lua script centered around roleplaying and having fun in a game full of ad bots and toxic cheaters.",
     "Version": "0.00",
-    "Update": "2026/07/19",
+    "Update": "2026/08/01",
     "Size": "1.42 MB",
     "Download": [
       "https://blog.1007890.xyz/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/Samurais-Scripts.zip",
@@ -788,8 +804,8 @@
     "Author": "镜像自YimMenu官方Lua仓库,定期同步",
     "Description": "A powerful menu script featuring advanced recovery options, money tools, a Heist Editor, and much more.",
     "Version": "0.00",
-    "Update": "2026/07/27",
-    "Size": "49.93 KB",
+    "Update": "2026/08/01",
+    "Size": "51.67 KB",
     "Download": [
       "https://blog.1007890.xyz/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/UltimateMenuRevived.zip",
       "https://ghproxy.net/https://raw.githubusercontent.com/sch-lda/GTA5OnlineLua/main/YimMenuOrg/UltimateMenuRevived.zip",
